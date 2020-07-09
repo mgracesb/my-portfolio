@@ -1,11 +1,19 @@
 import React from "react";
 
 const NavBarHeader = () => {
+  const onSetDisplay = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <nav>
       <ul className="navBarHeader">
-        <li className="homeButton active"></li>
-        <li className="infoButton">Info</li>
+        <li id="homeButton" onClick={onSetDisplay}>
+          Home
+        </li>
+        <li id="infoButton" onClick={onSetDisplay}>
+          Info
+        </li>
       </ul>
     </nav>
   );
