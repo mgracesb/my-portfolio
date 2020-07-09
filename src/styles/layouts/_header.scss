@@ -1,0 +1,38 @@
+header {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  height: 8vh;
+  padding-top: 2vh;
+  display: grid;
+  grid-template-columns: 10% 80% 20%;
+
+  .navBarHeader {
+    height: 100%;
+    grid-column: 2;
+    list-style: none;
+    display: flex;
+
+    li {
+      align-self: center;
+      padding: 0 3em;
+      font-family: $fontTitle;
+    }
+
+    .homeButton.active {
+      background: url("../../imgs/home-active.svg") no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 2.3em;
+      height: 2.3em;
+    }
+
+    .homeButton.inactive {
+      background-image: url("../../imgs/home-inactive.svg");
+    }
+
+    .infoButton {
+      font-size: 2.3em;
+      color: white;
+    }
+  }
+}
