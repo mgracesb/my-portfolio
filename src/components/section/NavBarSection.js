@@ -5,13 +5,19 @@ const NavBarSection = () => {
     <nav className="navBarSection">
       <ul>
         <li>
-          <h2>Projects</h2>
+          <input type="radio" id="projects" name="selector" />
+          <label htmlFor="projects">Projects</label>
+          <div className="chevron enabled"></div>
         </li>
         <li>
-          <h2>Experience</h2>
+          <input type="radio" id="experience" name="selector" />
+          <label htmlFor="experience">Experience</label>
+          <span className="chevron"></span>
         </li>
         <li>
-          <h2>About Me</h2>
+          <input type="radio" id="aboutMe" name="selector" />
+          <label htmlFor="aboutMe">About Me</label>
+          <span className="chevron"></span>
         </li>
       </ul>
     </nav>
