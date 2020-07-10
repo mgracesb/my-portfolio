@@ -1,0 +1,12 @@
+.modal {
+  &.active {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 88;
+    background-color: tomato;
+  }
+  &.disabled {
+    display: none;
+  }
+}

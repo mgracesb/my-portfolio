@@ -1,10 +1,8 @@
-.infoSection {
+.infoContainer {
   background-color: rgb(26, 63, 165);
   height: 85vh;
   width: 100%;
   padding: 0 2vw;
-  display: grid;
-  grid-template-columns: 10vw 90vw;
 }
 
 $animation-slide-distance: 100px;

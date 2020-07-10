@@ -1,0 +1,18 @@
+.panelContainer {
+  background-color: whitesmoke;
+
+  img {
+    height: 300px;
+    width: 300px;
+  }
+
+  h3 {
+    font-family: $fontTitle;
+  }
+
+  button {
+    border: none;
+    background: none;
+    text-decoration: underline;
+  }
+}
