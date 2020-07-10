@@ -1,8 +1,9 @@
 import React from "react";
 
-const Panels = () => {
+const Panels = (props) => {
   const openModal = (e) => {
     e.preventDefault();
+    props.onChangeModal();
   };
   return (
     <div className="panelContainer">

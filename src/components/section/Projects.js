@@ -1,12 +1,13 @@
 import React from "react";
 import Panels from "./Panels";
 
-const Projects = () => {
+const Projects = (props) => {
+  console.log(props);
   return (
     <section className="projects">
-      <Panels />
-      <Panels />
-      <Panels />
+      <Panels onChangeModal={props.onChangeModal} />
+      <Panels onChangeModal={props.onChangeModal} />
+      <Panels onChangeModal={props.onChangeModal} />
     </section>
   );
 };
