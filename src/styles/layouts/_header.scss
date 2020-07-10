@@ -1,7 +1,7 @@
 header {
   // background-color: rgba(255, 255, 255, 0.3);
   width: 100%;
-  height: 8vh;
+  height: 7vh;
   padding: 2vh;
   padding-bottom: 0;
   display: grid;
@@ -16,16 +16,25 @@ header {
     grid-template-columns: repeat(6, 1fr);
 
     li {
-      align-self: center;
-      font-family: $fontTitle;
+      height: 100%;
       text-align: center;
-      text-transform: uppercase;
+      align-self: center;
       cursor: pointer;
       position: relative;
-      color: rgba(255, 255, 255, 0.9);
       border: none;
+      padding-top: 5%;
       overflow: hidden;
-      font-size: 2rem;
+
+      a {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 1.5rem;
+        font-family: $fontTitle;
+        text-transform: uppercase;
+        padding: 0 40%;
+
+        text-decoration: none;
+      }
+
       &:after,
       &:active {
         background: $colorDefault;

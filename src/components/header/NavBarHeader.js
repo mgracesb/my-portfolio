@@ -1,18 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NavBarHeader = () => {
-  const onSetDisplay = (e) => {
-    e.preventDefault();
-  };
-
   return (
     <nav>
       <ul className="navBarHeader">
-        <li id="homeButton" onClick={onSetDisplay}>
-          Home
+        <li id="homeButton">
+          <Link to="/">Home</Link>
         </li>
-        <li id="infoButton" onClick={onSetDisplay}>
-          Info
+        <li id="infoButton">
+          <Link to="/info">Info</Link>
         </li>
       </ul>
     </nav>
