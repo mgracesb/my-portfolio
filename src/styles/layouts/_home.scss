@@ -1,8 +1,47 @@
-.home {
-  background-color: yellowgreen;
+.homeContainer {
+  border: 1px dashed greenyellow;
   height: 85vh;
   width: 100%;
   padding: 0 2vw;
   display: grid;
-  grid-template-columns: 10vw 90vw;
+  grid-template-columns: 35vw 1fr;
+  grid-gap: 20px;
+
+  .photo {
+    grid-column: 1;
+    width: 100%;
+    place-self: center;
+  }
+  .homeText {
+    background-image: radial-gradient(
+      $colorDefault,
+      transparent,
+      #111937,
+      #111937
+    );
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    width: 100%;
+    height: 100%;
+    color: $colorClear;
+    -webkit-transform: translatex(-10%) perspective(500) rotateY(-15deg);
+
+    h2 {
+      font-size: 8rem;
+      font-family: $fontTitle;
+      text-align: center;
+      text-shadow: 25px 15px 5px rgba(0, 0, 0, 0.8);
+    }
+
+    p {
+      margin-top: 5%;
+      font-size: 5rem;
+      font-family: $fontText;
+      text-align: center;
+      text-shadow: 25px 15px 5px rgba(0, 0, 0, 0.8);
+      text-transform: capitalize;
+    }
+  }
 }
