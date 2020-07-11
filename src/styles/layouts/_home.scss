@@ -13,12 +13,6 @@
     place-self: center;
   }
   .homeText {
-    background-image: radial-gradient(
-      $colorDefault,
-      transparent,
-      #111937,
-      #111937
-    );
     grid-column: 2;
     display: flex;
     flex-direction: column;
