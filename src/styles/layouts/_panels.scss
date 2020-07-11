@@ -1,18 +1,38 @@
 .panelContainer {
-  background-color: whitesmoke;
+  clip-path: polygon(0 0, 100% 0%, 100% 77%, 50% 100%, 0 77%);
+  background-image: linear-gradient(
+    150deg,
+    transparent,
+    transparent,
+    $colorDefault
+  );
+  border: 1px solid $colorDefault;
+  height: 80%;
+  width: 70%;
 
   img {
     height: 300px;
     width: 300px;
   }
 
-  h3 {
-    font-family: $fontTitle;
-  }
+  .projectTitle {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    transform: skewY(-25deg);
 
-  button {
-    border: none;
-    background: none;
-    text-decoration: underline;
+    h3 {
+      text-align: center;
+      @include h3;
+    }
+
+    button {
+      margin-top: 5%;
+      border: none;
+      background: none;
+      text-decoration: underline;
+      padding: 2%;
+      @include more;
+    }
   }
 }

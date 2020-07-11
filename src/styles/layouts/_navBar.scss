@@ -9,33 +9,44 @@
   ul li {
     background-color: rgba(0, 0, 0, 0.58);
     color: rgb(184, 184, 184);
+    text-transform: uppercase;
     list-style: none;
     border: 1px;
+    position: relative;
+    padding: 10%;
+    padding-left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    position: relative;
-    padding: 10% 5%;
-    width: 100%;
     transition: ease-in 100ms;
 
     &:hover,
     &:active {
       color: $colorClear;
       width: 110%;
-      box-shadow: 0px 0px 10px #2edbff;
-      border: 1px solid #2edbff;
+      transform: translatex(5%);
+      border-top: 1px solid #2edbff;
+      border-bottom: 1px solid #2edbff;
     }
 
     label {
-      font-size: 1.8rem;
-      place-self: center;
+      font-size: 1.2rem;
     }
 
-    .chevron.enabled {
-      width: 20px;
-      height: 20px;
-      background: url("../../imgs/chevron.svg") no-repeat;
-      background-size: contain;
+    input {
+      display: none;
+    }
+
+    .chevron {
+      &.enabled {
+        width: 15%;
+        height: auto;
+        background: url("../../imgs/chevron.svg") no-repeat;
+        background-size: contain;
+      }
+      &.disabled {
+        display: none;
+      }
     }
   }
 }

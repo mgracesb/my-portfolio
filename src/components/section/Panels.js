@@ -8,10 +8,12 @@ const Panels = (props) => {
   return (
     <div className="panelContainer">
       <img src="#" alt="" />
-      <h3>Title</h3>
-      <button type="button" onClick={openModal}>
-        + more
-      </button>
+      <div className="projectTitle">
+        <h3>Project title</h3>
+        <button type="button" onClick={openModal}>
+          + more
+        </button>
+      </div>
     </div>
   );
 };
