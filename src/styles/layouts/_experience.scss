@@ -1,0 +1,16 @@
+.experienceContainer {
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  padding-left: 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 10% 1fr;
+  place-items: center;
+
+  .experienceTitle {
+    grid-row: 1;
+    grid-column: 1/-1;
+    @include h1;
+  }
+}

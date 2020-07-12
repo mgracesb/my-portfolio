@@ -1,23 +1,19 @@
 import React from "react";
+import SectionInputs from "./SectionInputs";
 
 const NavBarSection = () => {
+  const selectSection = () => {};
   return (
     <nav className="navBarSection">
       <ul>
-        <li>
-          <input type="radio" id="projects" name="selector" />
-          <div className="chevron enabled"></div>
-          <label htmlFor="projects">Projects</label>
+        <li value="projects" onClick={selectSection}>
+          <SectionInputs id="projects" />
         </li>
-        <li>
-          <input type="radio" id="experience" name="selector" />
-          <div className="chevron"></div>
-          <label htmlFor="experience">Experience</label>
+        <li value="experience" onClick={selectSection}>
+          <SectionInputs id="experience" />
         </li>
-        <li>
-          <input type="radio" id="aboutMe" name="selector" />
-          <div className="chevron"></div>
-          <label htmlFor="aboutMe">About Me</label>
+        <li value="about me" onClick={selectSection}>
+          <SectionInputs id="about me" />
         </li>
       </ul>
     </nav>

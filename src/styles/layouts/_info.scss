@@ -2,6 +2,12 @@
   height: 85vh;
   width: 100%;
   padding: 0 2vw;
+  scroll-snap-type: y proximity;
+  overflow-y: scroll;
+
+  section {
+    scroll-snap-align: start;
+  }
 }
 
 $animation-slide-distance: 100px;

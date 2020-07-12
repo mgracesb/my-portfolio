@@ -1,6 +1,7 @@
 import React from "react";
 import NavBarSection from "./section/NavBarSection";
 import Projects from "./section/Projects";
+import Experience from "./section/Experience";
 import Modal1 from "./section/Modal1";
 
 class Info extends React.Component {
@@ -25,6 +26,7 @@ class Info extends React.Component {
         <Modal1 modal={modal} onChangeModal={this.onChangeModal} />
         <NavBarSection />
         <Projects onChangeModal={this.onChangeModal} modal={modal} />
+        <Experience onChangeModal={this.onChangeModal} modal={modal} />
       </main>
     );
   }

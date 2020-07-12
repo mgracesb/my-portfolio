@@ -1,7 +1,7 @@
 .navBarSection {
   background-image: linear-gradient(transparent, #070b18, transparent);
   height: 85%;
-  width: 5vw;
+  width: 7vw;
   font-family: $fontText;
   position: absolute;
   display: flex;
@@ -29,11 +29,10 @@
         transparent,
         $colorDefault
       );
-      color: $colorClear;
-      width: 110%;
-      // transform: translatex(5%);
       border-top: 1px solid #2edbff;
       border-bottom: 1px solid #2edbff;
+      color: $colorClear;
+      width: 110%;
       @include navGlow;
     }
 

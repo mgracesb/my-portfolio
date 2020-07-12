@@ -6,10 +6,14 @@ const NavBarHeader = () => {
     <nav>
       <ul className="navBarHeader">
         <li id="homeButton">
-          <Link to="/">Home</Link>
+          <Link className="link" to="/">
+            Home
+          </Link>
         </li>
         <li id="infoButton">
-          <Link to="/info">Info</Link>
+          <Link className="link" to="/info">
+            Info
+          </Link>
         </li>
       </ul>
     </nav>

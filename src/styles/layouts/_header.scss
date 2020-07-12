@@ -25,7 +25,7 @@ header {
       padding-top: 5%;
       overflow: hidden;
 
-      a {
+      .link {
         color: rgba(255, 255, 255, 0.9);
         font-size: 1.5rem;
         font-family: $fontTitle;
@@ -39,7 +39,7 @@ header {
         background: $colorDefault;
         filter: blur(0.5px);
         box-shadow: 0.3rem 0 0.5rem 0.2rem $colorDefault, 0px 0px 0px 1px white,
-          0px 0px 0px 1px white, 0px 0px 5px white, 0px 0px 5px white inset;
+          0px 0px 0px 1px white, 0px 0px 3px white, 0px 0px 3px white inset;
       }
 
       &:hover {
@@ -50,9 +50,11 @@ header {
       }
 
       &:active {
-        text-shadow: 0px 0px 5px black;
-        padding-top: 12px;
-        padding-bottom: 8px;
+        background: none;
+        box-shadow: none;
+        border-top: 1px solid $colorDefault;
+        text-shadow: 1px 1px 10px $colorHighlight,
+          -1px -1px 10px $colorHighlight;
       }
 
       &:after {
@@ -64,10 +66,6 @@ header {
         display: block;
         bottom: 0;
         transition: all 0.1s ease-in;
-      }
-
-      &:focus {
-        outline: 0;
       }
     }
   }
