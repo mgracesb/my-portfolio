@@ -1,13 +1,14 @@
 .navBarSection {
+  background-image: linear-gradient(transparent, #070b18, transparent);
+  height: 85%;
+  width: 5vw;
   font-family: $fontText;
   position: absolute;
-  top: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 
   ul li {
-    background-color: rgba(0, 0, 0, 0.58);
     color: rgb(184, 184, 184);
     text-transform: uppercase;
     list-style: none;
@@ -22,11 +23,18 @@
 
     &:hover,
     &:active {
+      background-image: linear-gradient(
+        150deg,
+        $colorHighlight,
+        transparent,
+        $colorDefault
+      );
       color: $colorClear;
       width: 110%;
-      transform: translatex(5%);
+      // transform: translatex(5%);
       border-top: 1px solid #2edbff;
       border-bottom: 1px solid #2edbff;
+      @include navGlow;
     }
 
     label {

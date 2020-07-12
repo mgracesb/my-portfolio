@@ -24,6 +24,7 @@
     h3 {
       text-align: center;
       @include h3;
+      @include navGlow;
     }
 
     button {

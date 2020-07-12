@@ -1,14 +1,14 @@
 .modal {
   &.active {
     top: 13%;
-    left: 15%;
-    width: 70vw;
-    height: 70vh;
+    left: 16%;
+    width: 75vw;
+    height: 75vh;
     position: absolute;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     z-index: 80;
-    background-color: rgba(255, 99, 71, 0.685);
+    background-color: rgba(237, 255, 71, 0.596);
   }
   &.disabled {
     display: none;
@@ -16,6 +16,6 @@
   .closeModal {
     background: none;
     border: none;
-    color: turquoise;
+    color: rgb(224, 64, 176);
   }
 }

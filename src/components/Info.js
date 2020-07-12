@@ -22,7 +22,7 @@ class Info extends React.Component {
     const modal = this.state.isModalOpen;
     return (
       <main className="infoContainer">
-        <Modal1 modal={modal} />
+        <Modal1 modal={modal} onChangeModal={this.onChangeModal} />
         <NavBarSection />
         <Projects onChangeModal={this.onChangeModal} modal={modal} />
       </main>
