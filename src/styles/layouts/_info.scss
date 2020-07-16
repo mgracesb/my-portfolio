@@ -1,7 +1,8 @@
 .infoContainer {
-  height: 85vh;
+  grid-row: 2;
+  height: 95vh;
   width: 100%;
-  padding: 0 2vw;
+  padding: 2vh 0 0 5vw;
   scroll-snap-type: y proximity;
   overflow-y: scroll;
 
@@ -10,7 +11,7 @@
   }
 }
 
-$animation-slide-distance: 100px;
+$animation-slide-distance: 150px;
 
 @keyframes slideDown {
   0% {

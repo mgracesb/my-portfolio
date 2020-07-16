@@ -7,17 +7,19 @@ const Modal = (props) => {
   };
   if (props.modal === true) {
     return (
-      <div className="modal active">
-        HI I'm a Modal
-        <button
-          type="button"
-          className="closeModal"
-          id="closeModal"
-          value={props.modal}
-          onClick={closeModal}
-        >
-          x
-        </button>
+      <div className="modalContainer active">
+        <div className="modal">
+          HI I'm a Modal
+          <button
+            type="button"
+            className="closeModal"
+            id="closeModal"
+            value={props.modal}
+            onClick={closeModal}
+          >
+            x
+          </button>
+        </div>
       </div>
     );
   } else {

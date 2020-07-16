@@ -11,3 +11,8 @@
 @import "./layouts/projects";
 @import "./layouts/experience";
 @import "./layouts/modal";
+
+.wrapper {
+  display: grid;
+  grid-template-rows: repeat(7vh, 1fr);
+}

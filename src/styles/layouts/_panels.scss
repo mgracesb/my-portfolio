@@ -1,14 +1,8 @@
 .panelContainer {
-  clip-path: polygon(0 0, 100% 0%, 100% 77%, 50% 100%, 0 77%);
-  background-image: linear-gradient(
-    150deg,
-    transparent,
-    transparent,
-    $colorDefault
-  );
+  background-image: linear-gradient(transparent, transparent, $colorDark);
   border: 1px solid $colorDefault;
-  height: 80%;
-  width: 70%;
+  height: 65%;
+  width: 85%;
 
   img {
     height: 300px;
@@ -19,7 +13,6 @@
     display: flex;
     flex-direction: column;
     place-content: center;
-    transform: skewY(-25deg);
 
     h3 {
       text-align: center;

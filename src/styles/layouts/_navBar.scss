@@ -1,12 +1,16 @@
 .navBarSection {
-  background-image: linear-gradient(transparent, #070b18, transparent);
-  height: 85%;
-  width: 7vw;
+  // background-image: linear-gradient(transparent, #070b18, transparent);
+  // height: 40%;
+  border: 1px solid yellow;
+  width: 10vw;
+  top: 40%;
+  padding: 20px;
   font-family: $fontText;
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  -webkit-transform: translatex(-10%) perspective(500) rotateY(20deg);
 
   ul li {
     color: rgb(184, 184, 184);

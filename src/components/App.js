@@ -7,7 +7,7 @@ import { Route, Switch } from "react-router-dom";
 
 const App = () => {
   return (
-    <div>
+    <div className="wrapper">
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />

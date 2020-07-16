@@ -1,4 +1,6 @@
 @mixin h1 {
+  margin: 0;
+  align-self: end;
   font-family: $fontTitle;
   font-size: 2.8rem;
   text-transform: uppercase;
