@@ -8,8 +8,7 @@ const Modal = (props) => {
   if (props.modal === true) {
     return (
       <div className="modalContainer active">
-        <div className="modal">
-          HI I'm a Modal
+        <div className="modalInfo">
           <button
             type="button"
             className="closeModal"
@@ -17,8 +16,13 @@ const Modal = (props) => {
             value={props.modal}
             onClick={closeModal}
           >
-            x
+            <i class="fas fa-times"></i>
           </button>
+          <img className="modalImg" alt="description" />
+          <div className="modalText">
+            <h4>Title</h4>
+            <p>Description</p>
+          </div>
         </div>
       </div>
     );

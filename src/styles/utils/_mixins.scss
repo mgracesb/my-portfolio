@@ -17,6 +17,12 @@
   color: $colorClear;
 }
 
+@mixin h4 {
+  font-weight: bolder;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
 @mixin more {
   font-family: $fontText;
   font-weight: 300;
