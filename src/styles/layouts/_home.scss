@@ -3,39 +3,84 @@
   width: 100%;
   padding: 0 2vw;
   display: grid;
-  grid-template-columns: 35vw 1fr;
+  grid-template-columns: 5vw 35vw 55vw 5vw;
+  grid-template-rows: 1fr;
   grid-gap: 20px;
   overflow: hidden;
 
   .photo {
-    grid-column: 1;
-    width: 100%;
+    padding: 10%;
+    padding-top: 25%;
+    grid-column: 2;
+    width: auto;
+    height: 100%;
     place-self: center;
   }
-  .homeText {
-    grid-column: 2;
+
+  .homeContent {
+    grid-column: 3;
     display: flex;
     flex-direction: column;
     place-content: center;
     width: 100%;
     height: 100%;
-    color: $colorClear;
-    -webkit-transform: translatex(-10%) perspective(500) rotateY(-15deg);
+    transform: perspective(400) rotateY(-15deg);
+    -webkit-transform: perspective(400) rotateY(-15deg);
 
     h2 {
-      font-size: 8rem;
+      font-size: 6.5rem;
       font-family: $fontTitle;
       text-align: center;
-      text-shadow: 25px 15px 5px rgba(0, 0, 0, 0.8);
+      letter-spacing: 8px;
+      color: $colora;
+      text-align: center;
+      color: #eedde0;
+      text-shadow: 0 0 30px #1e6edf, 0 0 10px rgba(230, 161, 173, 0.41),
+        0 0 100px $colorDefault, 0 0 500px $colora,
+        5px 9px 5px rgba(0, 0, 0, 0.5), 7px 11px 6px rgba(0, 0, 0, 0.5);
+      text-transform: uppercase;
     }
 
-    p {
-      margin-top: 5%;
+    .subtitle {
+      margin: 5% 0;
       font-size: 5rem;
+      font-weight: 400;
       font-family: $fontText;
       text-align: center;
-      text-shadow: 25px 15px 5px rgba(0, 0, 0, 0.8);
+      color: #eedde0;
+      text-shadow: 0 0 30px #1e6edf, 0 0 10px rgba(230, 161, 173, 0.41),
+        0 0 100px $colorDefault, 0 0 500px $colora,
+        5px 9px 5px rgba(0, 0, 0, 0.5), 7px 11px 6px rgba(0, 0, 0, 0.5);
       text-transform: capitalize;
+    }
+
+    .moreInfo {
+      background-color: transparent;
+      border: 2px solid $colorHighlight2;
+      border-radius: 0.6em;
+      cursor: pointer;
+      color: $colorHighlight2;
+      display: flex;
+      align-self: center;
+      font-size: 1rem;
+      padding: 1% 1.5%;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: $fontText;
+      box-shadow: 0 0 1px $colorHighlight2, 0 0 2px $colorHighlight2,
+        25px 9px 15px rgba(0, 0, 0, 0.5);
+
+      transition: all 100ms ease-in-out;
+
+      &:hover,
+      &:active {
+        background-color: $colorHighlight2;
+        color: $colorClear;
+        text-shadow: 3px 2px 4px $colorDark;
+        box-shadow: 0 0 5px $colorHighlight2, 0 0 20px $colorHighlight2,
+          0 0 40px $colorHighlight2, 0 0 180px $colorHighlight2;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+      }
     }
   }
 }

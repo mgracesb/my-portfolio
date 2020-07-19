@@ -1,13 +1,19 @@
 import React from "react";
-import Photo from "../imgs/photo.png";
+// import Photo from "../imgs/pp image.png";
 
 const Home = () => {
   return (
     <section className="homeContainer">
-      <img src={Photo} alt="" className="photo" />
-      <div className="homeText">
+      <div className="homeContent">
         <h2>mercy shyu</h2>
-        <p>Frontend developer</p>
+        <p className="subtitle">Frontend developer</p>
+        <a
+          className="moreInfo"
+          id="moreInfo"
+          href="https://codepen.io/derekmorash/pen/XddZJY"
+        >
+          more about me
+        </a>
       </div>
     </section>
   );

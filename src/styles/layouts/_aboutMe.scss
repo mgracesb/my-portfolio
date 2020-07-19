@@ -1,0 +1,122 @@
+.crystals {
+  position: fixed;
+  top: 0;
+  left: 30vw;
+  width: 30vw;
+  height: 100%;
+  z-index: 1;
+
+  .crystal_01 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(http://img.finalfantasyxiv.com/lds/promo/pc/global/images/world/what/crystal_01.png)
+      repeat-y;
+    -webkit-animation: bg-crystal001 30s infinite;
+    -moz-animation: bg-crystal001 30s infinite;
+    -o-animation: bg-crystal001 30s infinite;
+    animation: bg-crystal001 30s infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+
+  .crystal_02 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(http://img.finalfantasyxiv.com/lds/promo/pc/global/images/world/what/crystal_02.png)
+      repeat-y;
+    -webkit-animation: bg-crystal002 60s infinite;
+    -moz-animation: bg-crystal002 60s infinite;
+    -o-animation: bg-crystal002 60s infinite;
+    animation: bg-crystal002 60s infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+
+  .crystal_03 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    margin-left: -180px;
+    background: url(http://img.finalfantasyxiv.com/lds/promo/pc/global/images/world/what/crystal_03.png)
+      repeat-y;
+    -webkit-animation: bg-crystal003 90s infinite;
+    -moz-animation: bg-crystal003 90s infinite;
+    -o-animation: bg-crystal003 90s infinite;
+    animation: bg-crystal003 90s infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+}
+
+//Animations
+@-webkit-keyframes bg-crystal001 {
+  100% {
+    background-position: 0px -900px;
+  }
+}
+@-moz-keyframes bg-crystal001 {
+  100% {
+    background-position: 0px -900px;
+  }
+}
+@-o-keyframes bg-crystal001 {
+  100% {
+    background-position: 0px -900px;
+  }
+}
+@keyframes bg-crystal001 {
+  100% {
+    background-position: 0px -900px;
+  }
+}
+
+@-webkit-keyframes bg-crystal002 {
+  100% {
+    background-position: 0px -900px;
+  }
+}
+@-moz-keyframes bg-crystal002 {
+  100% {
+    background-position: 0px -900px;
+  }
+}
+@-o-keyframes bg-crystal002 {
+  100% {
+    background-position: 0px -900px;
+  }
+}
+@keyframes bg-crystal002 {
+  100% {
+    background-position: 0px -900px;
+  }
+}
+
+@-webkit-keyframes bg-crystal003 {
+  100% {
+    background-position: 0px -1200px;
+  }
+}
+@-moz-keyframes bg-crystal003 {
+  100% {
+    background-position: 0px -1200px;
+  }
+}
+@-o-keyframes bg-crystal003 {
+  100% {
+    background-position: 0px -1200px;
+  }
+}
+@keyframes bg-crystal003 {
+  100% {
+    background-position: 0px -1200px;
+  }
+}

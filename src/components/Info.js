@@ -3,6 +3,7 @@ import NavBarSection from "./section/NavBarSection";
 import Projects from "./section/Projects";
 import Experience from "./section/Experience";
 import Modal1 from "./section/Modal1";
+import AboutMe from "./section/AboutMe";
 
 class Info extends React.Component {
   constructor(props) {
@@ -27,6 +28,7 @@ class Info extends React.Component {
         <NavBarSection />
         <Projects onChangeModal={this.onChangeModal} modal={modal} />
         <Experience onChangeModal={this.onChangeModal} modal={modal} />
+        <AboutMe />
       </main>
     );
   }
