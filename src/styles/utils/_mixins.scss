@@ -30,6 +30,16 @@
   color: $colorClear;
 }
 
+@mixin titleShadow {
+  text-shadow: 0 0 30px #1e6edf, 0 0 10px rgba(230, 161, 173, 0.41),
+    0 0 100px $colorDefault, 0 0 500px $colora, 5px 9px 5px rgba(0, 0, 0, 0.5),
+    7px 11px 6px rgba(0, 0, 0, 0.5);
+}
+
 @mixin navGlow {
   text-shadow: 1px 1px 6px $colorHighlight, -1px -1px 6px $colorClear;
+}
+
+@mixin iconGlow {
+  text-shadow: -1px -1px 6px $colorClear;
 }

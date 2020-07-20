@@ -40,8 +40,6 @@ header {
       &:active {
         background: $colorDefault;
         filter: blur(0.5px);
-        box-shadow: 0.3rem 0 0.5rem 0.2rem $colorDefault, 0px 0px 0px 1px white,
-          0px 0px 0px 1px white, 0px 0px 3px white, 0px 0px 3px white inset;
       }
 
       &:hover {
@@ -62,7 +60,7 @@ header {
       &:after {
         content: "";
         position: absolute;
-        height: 2px;
+        height: 1px;
         width: 100%;
         left: -100%;
         display: block;

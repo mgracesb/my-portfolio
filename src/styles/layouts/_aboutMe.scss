@@ -1,59 +1,147 @@
-.crystals {
-  position: fixed;
-  top: 0;
-  left: 30vw;
-  width: 30vw;
+.aboutMeContainer {
+  width: 100%;
   height: 100%;
-  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 10% 1fr;
+  place-items: center;
 
-  .crystal_01 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url(http://img.finalfantasyxiv.com/lds/promo/pc/global/images/world/what/crystal_01.png)
-      repeat-y;
-    -webkit-animation: bg-crystal001 30s infinite;
-    -moz-animation: bg-crystal001 30s infinite;
-    -o-animation: bg-crystal001 30s infinite;
-    animation: bg-crystal001 30s infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-    -o-animation-timing-function: linear;
-    animation-timing-function: linear;
+  .aboutMeTitle {
+    grid-row: 1;
+    grid-column: 1/-1;
+    @include h1;
   }
 
-  .crystal_02 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url(http://img.finalfantasyxiv.com/lds/promo/pc/global/images/world/what/crystal_02.png)
-      repeat-y;
-    -webkit-animation: bg-crystal002 60s infinite;
-    -moz-animation: bg-crystal002 60s infinite;
-    -o-animation: bg-crystal002 60s infinite;
-    animation: bg-crystal002 60s infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-    -o-animation-timing-function: linear;
-    animation-timing-function: linear;
-  }
+  .aboutMeBorder {
+    border: 2px solid $colorDefault;
+    border-radius: 10px;
+    grid-column: 1/-1;
+    width: 55%;
+    height: 65%;
+    box-shadow: inset 15px 13px 24px #0a0127ab, inset -15px -13px 24px #0a0127ab;
+    // padding: 0.7% 2%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
-  .crystal_03 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 50%;
-    margin-left: -180px;
-    background: url(http://img.finalfantasyxiv.com/lds/promo/pc/global/images/world/what/crystal_03.png)
-      repeat-y;
-    -webkit-animation: bg-crystal003 90s infinite;
-    -moz-animation: bg-crystal003 90s infinite;
-    -o-animation: bg-crystal003 90s infinite;
-    animation: bg-crystal003 90s infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-    -o-animation-timing-function: linear;
-    animation-timing-function: linear;
+    .aboutMeImg {
+      grid-column: 1;
+      position: relative;
+      // background-image: linear-gradient(120deg, transparent 60%, $colorDark);
+      height: 99%;
+      width: 100%;
+
+      .crystals {
+        // position: fixed;
+        // top: 0;
+        // left: 30vw;
+        // z-index: 1;
+
+        .crystal_01 {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 10%;
+          background: url(http://img.finalfantasyxiv.com/lds/promo/pc/global/images/world/what/crystal_01.png)
+            repeat-y;
+          -webkit-animation: bg-crystal001 30s infinite;
+          -moz-animation: bg-crystal001 30s infinite;
+          -o-animation: bg-crystal001 30s infinite;
+          animation: bg-crystal001 30s infinite;
+          -webkit-animation-timing-function: linear;
+          -moz-animation-timing-function: linear;
+          -o-animation-timing-function: linear;
+          animation-timing-function: linear;
+        }
+
+        .crystal_02 {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 10%;
+          background: url(http://img.finalfantasyxiv.com/lds/promo/pc/global/images/world/what/crystal_02.png)
+            repeat-y;
+          -webkit-animation: bg-crystal002 60s infinite;
+          -moz-animation: bg-crystal002 60s infinite;
+          -o-animation: bg-crystal002 60s infinite;
+          animation: bg-crystal002 60s infinite;
+          -webkit-animation-timing-function: linear;
+          -moz-animation-timing-function: linear;
+          -o-animation-timing-function: linear;
+          animation-timing-function: linear;
+        }
+
+        .crystal_03 {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 15%;
+          // margin-left: -180px;
+          background: url(http://img.finalfantasyxiv.com/lds/promo/pc/global/images/world/what/crystal_03.png)
+            repeat-y;
+          -webkit-animation: bg-crystal003 90s infinite;
+          -moz-animation: bg-crystal003 90s infinite;
+          -o-animation: bg-crystal003 90s infinite;
+          animation: bg-crystal003 90s infinite;
+          -webkit-animation-timing-function: linear;
+          -moz-animation-timing-function: linear;
+          -o-animation-timing-function: linear;
+          animation-timing-function: linear;
+        }
+      }
+    }
+    .aboutMeTextContainer {
+      background-image: linear-gradient(100deg, transparent, #0a0127ab);
+      grid-column: 2;
+      color: $colorClear;
+      display: grid;
+      grid-template-rows: 10% 1fr;
+      line-height: 1.4;
+      letter-spacing: 1px;
+      padding: 5%;
+
+      h5 {
+        text-align: center;
+        grid-row: 1;
+        font-family: $fontTitle;
+        font-size: 2rem;
+        letter-spacing: 5px;
+        align-self: end;
+      }
+      .aboutMeText {
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-family: $fontText;
+
+        h6 {
+          text-transform: uppercase;
+          letter-spacing: 5px;
+        }
+
+        p {
+        }
+
+        .rrss {
+          min-width: 300px;
+          min-height: 60px;
+          display: flex;
+          justify-content: space-evenly;
+          i {
+            text-align: right;
+            color: $colorClear;
+            font-size: 1.5rem;
+            padding: 3%;
+
+            &:hover {
+              color: $colorClear;
+              border: 1px solid white;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
   }
 }
 

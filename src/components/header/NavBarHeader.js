@@ -15,6 +15,7 @@ const NavBarHeader = () => {
             Info
           </Link>
         </li>
+        <span className="menu-highlight"></span>
       </ul>
     </nav>
   );

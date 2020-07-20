@@ -1,9 +1,8 @@
 .navBarSection {
   // background-image: linear-gradient(transparent, #070b18, transparent);
   // height: 40%;
-  border: 1px solid yellow;
   width: 10vw;
-  top: 40%;
+  top: 45%;
   padding: 20px;
   font-family: $fontText;
   position: absolute;
@@ -12,51 +11,54 @@
   justify-content: space-around;
   -webkit-transform: translatex(-10%) perspective(500) rotateY(20deg);
 
-  ul li {
-    color: rgb(184, 184, 184);
-    text-transform: uppercase;
-    list-style: none;
-    border: 1px;
-    position: relative;
-    padding: 10%;
-    padding-left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transition: ease-in 100ms;
+  ul {
+    background-color: #002963a2;
+    box-shadow: -5px 9px 5px rgba(0, 0, 0, 0.3),
+      -7px 11px 6px rgba(0, 0, 0, 0.3);
+    li {
+      list-style: none;
+      a {
+        color: rgb(184, 184, 184);
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: 1px;
+        position: relative;
+        padding: 10%;
+        padding-left: 0;
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        transition: ease-in 100ms;
 
-    &:hover,
-    &:active {
-      background-image: linear-gradient(
-        150deg,
-        $colorHighlight,
-        transparent,
-        $colorDefault
-      );
-      border-top: 1px solid #2edbff;
-      border-bottom: 1px solid #2edbff;
-      color: $colorClear;
-      width: 110%;
-      @include navGlow;
-    }
+        &:hover,
+        &:active {
+          background-image: linear-gradient(
+            150deg,
+            $colorHighlight,
+            transparent,
+            $colorDefault
+          );
+          border-top: 1px solid $colorDefault;
+          border-bottom: 1px solid $colorDefault;
+          color: $colorClear;
+          width: 100%;
+          letter-spacing: 3px;
+          @include navGlow;
+        }
 
-    label {
-      font-size: 1.2rem;
-    }
-
-    input {
-      display: none;
-    }
-
-    .chevron {
-      &.enabled {
-        width: 15%;
-        height: auto;
-        background: url("../../imgs/chevron.svg") no-repeat;
-        background-size: contain;
-      }
-      &.disabled {
-        display: none;
+        .chevron {
+          display: inline-block;
+          margin-left: 5%;
+          width: 15%;
+          height: 15%;
+          &:hover,
+          &:active {
+            height: auto;
+            background-size: contain;
+            @include iconGlow;
+          }
+        }
       }
     }
   }
