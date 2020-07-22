@@ -94,7 +94,7 @@
       grid-column: 2;
       color: $colorClear;
       display: grid;
-      grid-template-rows: 10% repeat(4, 20%) 10%;
+      grid-template-rows: 14% repeat(4, 19%) 10%;
       line-height: 1.4;
       letter-spacing: 1px;
       padding: 5%;
@@ -106,21 +106,18 @@
         font-size: 2rem;
         letter-spacing: 5px;
         align-self: end;
+        padding-bottom: 4%;
       }
 
-      .aboutMeText {
-        grid-row: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        font-family: $fontText;
-
+      .txt {
         h6 {
           text-transform: uppercase;
           letter-spacing: 5px;
+          font-family: $fontText;
         }
 
         p {
+          font-family: $fontText;
         }
       }
     }

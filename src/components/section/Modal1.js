@@ -8,20 +8,22 @@ const Modal = (props) => {
   if (props.modal === true) {
     return (
       <div className="modalContainer active">
-        <div className="modalInfo">
-          <button
-            type="button"
-            className="closeModal"
-            id="closeModal"
-            value={props.modal}
-            onClick={closeModal}
-          >
-            <i class="fas fa-times"></i>
-          </button>
-          <img className="modalImg" alt="description" />
-          <div className="modalText">
-            <h4>Title</h4>
-            <p>Description</p>
+        <div className="modalBorder">
+          <div className="modalInfo">
+            <button
+              type="button"
+              className="closeModal"
+              id="closeModal"
+              value={props.modal}
+              onClick={closeModal}
+            >
+              <i class="fas fa-times"></i>
+            </button>
+            <img className="modalImg" alt="description" />
+            <div className="modalText">
+              <h4>Title</h4>
+              <p>Description</p>
+            </div>
           </div>
         </div>
       </div>
