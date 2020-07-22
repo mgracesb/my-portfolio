@@ -94,7 +94,7 @@
       grid-column: 2;
       color: $colorClear;
       display: grid;
-      grid-template-rows: 10% 1fr;
+      grid-template-rows: 10% repeat(4, 20%) 10%;
       line-height: 1.4;
       letter-spacing: 1px;
       padding: 5%;
@@ -107,6 +107,7 @@
         letter-spacing: 5px;
         align-self: end;
       }
+
       .aboutMeText {
         grid-row: 2;
         display: flex;
@@ -120,25 +121,6 @@
         }
 
         p {
-        }
-
-        .rrss {
-          min-width: 300px;
-          min-height: 60px;
-          display: flex;
-          justify-content: space-evenly;
-          i {
-            text-align: right;
-            color: $colorClear;
-            font-size: 1.5rem;
-            padding: 3%;
-
-            &:hover {
-              color: $colorClear;
-              border: 1px solid white;
-              border-radius: 50%;
-            }
-          }
         }
       }
     }

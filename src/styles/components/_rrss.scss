@@ -1,0 +1,42 @@
+.rrssContainer {
+  display: flex;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: space-evenly;
+
+  .rrssBox {
+    // border: 1px solid $colora;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 20%;
+    justify-content: center;
+    padding: 20px;
+    transform: skewX(20deg);
+    margin: 2% 0;
+    transition: all 200ms ease-in;
+
+    i {
+      position: relative;
+      text-align: right;
+      font-size: 1.5rem;
+      padding: 3%;
+      transform: skewX(-20deg);
+      color: $colorClear;
+    }
+    &:hover,
+    &:active {
+      background-image: linear-gradient(
+        150deg,
+        $colorHighlight,
+        transparent,
+        $colorDefault
+      );
+      border-top: 1px solid $colorDefault;
+      border-bottom: 1px solid $colorDefault;
+      width: 80%;
+      @include navGlow;
+    }
+  }
+}

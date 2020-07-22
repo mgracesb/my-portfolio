@@ -1,5 +1,4 @@
 import React from "react";
-// import Photo from "../imgs/pp image.png";
 
 const Home = () => {
   return (
