@@ -4,6 +4,7 @@ import Projects from "./section/Projects";
 import Experience from "./section/Experience";
 import Modal1 from "./section/Modal1";
 import AboutMe from "./section/AboutMe";
+import { Route, Switch } from "react-router-dom";
 
 class Info extends React.Component {
   constructor(props) {
@@ -26,9 +27,31 @@ class Info extends React.Component {
       <main className="infoContainer">
         <Modal1 modal={modal} onChangeModal={this.onChangeModal} />
         <NavBarSection />
-        <Projects onChangeModal={this.onChangeModal} modal={modal} />
-        <Experience onChangeModal={this.onChangeModal} modal={modal} />
-        <AboutMe />
+        <Switch>
+          <Route
+            path="/info/projects"
+            component={Projects}
+            onChangeModal={this.onChangeModal}
+            modal={modal}
+          >
+            <Projects onChangeModal={this.onChangeModal} modal={modal} />
+          </Route>
+          <Route
+            path="/info/experience"
+            component={Experience}
+            onChangeModal={this.onChangeModal}
+            modal={modal}
+          >
+            <Experience onChangeModal={this.onChangeModal} modal={modal} />
+          </Route>
+          <Route path="/info/aboutme" component={AboutMe}>
+            <AboutMe />
+          </Route>
+
+          {/* 
+        
+         */}
+        </Switch>
       </main>
     );
   }
