@@ -47,10 +47,6 @@ class Info extends React.Component {
           <Route path="/info/aboutme" component={AboutMe}>
             <AboutMe />
           </Route>
-
-          {/* 
-        
-         */}
         </Switch>
       </main>
     );
