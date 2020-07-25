@@ -3,7 +3,7 @@ import Panels from "./Panels";
 
 const Projects = (props) => {
   return (
-    <section className="projectsContainer">
+    <section className="projectsContainer" id="projects">
       <h1 className="projectsTitle">Projects</h1>
       <Panels modal={props.modal} onChangeModal={props.onChangeModal} />
       <Panels modal={props.modal} onChangeModal={props.onChangeModal} />

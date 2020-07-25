@@ -4,7 +4,7 @@ import AboutMeTxt from "./AboutMeTxt";
 
 const AboutMe = () => {
   return (
-    <section className="aboutMeContainer" id="about-me">
+    <section className="aboutMeContainer" id="aboutme">
       <h1 className="aboutMeTitle">About me</h1>
       <div className="aboutMeBorder">
         <div className="aboutMeImg">

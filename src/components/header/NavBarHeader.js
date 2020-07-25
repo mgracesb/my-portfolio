@@ -11,7 +11,7 @@ const NavBarHeader = () => {
           </Link>
         </li>
         <li id="infoButton">
-          <Link className="link" to="/info">
+          <Link className="link" to="/info/projects">
             Info
           </Link>
         </li>

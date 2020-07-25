@@ -4,13 +4,13 @@ const RRSS = () => {
   return (
     <div className="rrssContainer">
       <div className="rrssBox">
-        <i class="fab fa-twitter"></i>
+        <i className="fab fa-twitter"></i>
       </div>
       <div className="rrssBox">
-        <i class="fab fa-linkedin-in"></i>
+        <i className="fab fa-linkedin-in"></i>
       </div>
       <div className="rrssBox">
-        <i class="fab fa-github-alt"></i>
+        <i className="fab fa-github-alt"></i>
       </div>
     </div>
   );
