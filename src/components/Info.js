@@ -8,7 +8,7 @@ import AboutMe from "./section/AboutMe";
 import { Route, Switch } from "react-router-dom";
 
 class Info extends React.Component {
-  constructor(props) {
+  constructor() {
     super();
     this.state = {
       isModalOpen: false,
@@ -32,15 +32,15 @@ class Info extends React.Component {
         <Switch>
           <Route
             path="/info/projects"
-            component={Projects}
-            onChangeModal={this.onChangeModal}
-            modal={modal}
+            component={() => (
+              <Projects onChangeModal={this.onChangeModal} modal={modal} />
+            )}
           />
           <Route
             path="/info/experience"
-            component={Experience}
-            onChangeModal={this.onChangeModal}
-            modal={modal}
+            component={() => (
+              <Experience onChangeModal={this.onChangeModal} modal={modal} />
+            )}
           />
           <Route path="/info/aboutme" component={AboutMe} />
         </Switch>

@@ -2,6 +2,7 @@ import React from "react";
 import Panels from "./Panels";
 
 const Projects = (props) => {
+  console.log(props.modal);
   return (
     <section className="projectsContainer" id="projects">
       <h1 className="projectsTitle">Projects</h1>
