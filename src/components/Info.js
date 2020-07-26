@@ -1,4 +1,5 @@
 import React from "react";
+import BreadCrumbs from "./section/BreadCrumbs";
 import NavBarSection from "./section/NavBarSection";
 import Projects from "./section/Projects";
 import Experience from "./section/Experience";
@@ -26,6 +27,7 @@ class Info extends React.Component {
     return (
       <main className="infoContainer">
         <Modal1 modal={modal} onChangeModal={this.onChangeModal} />
+        <BreadCrumbs />
         <NavBarSection />
         <Switch>
           <Route
@@ -33,20 +35,14 @@ class Info extends React.Component {
             component={Projects}
             onChangeModal={this.onChangeModal}
             modal={modal}
-          >
-            <Projects onChangeModal={this.onChangeModal} modal={modal} />
-          </Route>
+          />
           <Route
             path="/info/experience"
             component={Experience}
             onChangeModal={this.onChangeModal}
             modal={modal}
-          >
-            <Experience onChangeModal={this.onChangeModal} modal={modal} />
-          </Route>
-          <Route path="/info/aboutme" component={AboutMe}>
-            <AboutMe />
-          </Route>
+          />
+          <Route path="/info/aboutme" component={AboutMe} />
         </Switch>
       </main>
     );

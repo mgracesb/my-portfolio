@@ -3,11 +3,11 @@
   height: 95vh;
   width: 100%;
   padding: 2vh 0 0 5vw;
-  // scroll-snap-type: y proximity;
+  scroll-snap-type: y proximity;
   overflow-y: scroll;
 
   section {
-    // scroll-snap-align: start;
+    scroll-snap-align: start;
   }
 }
 

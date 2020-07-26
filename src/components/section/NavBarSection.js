@@ -4,32 +4,26 @@ import { Link } from "react-router-dom";
 const NavBarSection = () => {
   return (
     <nav className="navBarSection">
-      <ul>
-        <li>
-          <Link className="link" to="/info/projects">
-            {/* <SectionInputs value="projects" /> */}
-            <span className="chevron">
-              <i className="fas fa-bolt"></i>
-            </span>
-          </Link>
-        </li>
-        <li>
-          <Link className="link" to="/info/experience">
-            {/* <SectionInputs value="experience" /> */}
-            <span className="chevron">
-              <i className="fas fa-bolt"></i>
-            </span>
-          </Link>
-        </li>
-        <li>
-          <Link className="link" to="/info/aboutme">
-            {/* <SectionInputs value="about-me" /> */}
-            <span className="chevron">
-              <i className="fas fa-bolt"></i>
-            </span>
-          </Link>
-        </li>
-      </ul>
+      <Link className="link" to="/info/projects">
+        <span className="chevron">
+          <i className="fas fa-bolt"></i>
+        </span>
+        Projects
+      </Link>
+
+      <Link className="link" to="/info/experience">
+        <span className="chevron">
+          <i className="fas fa-bolt"></i>
+        </span>
+        Experience
+      </Link>
+
+      <Link className="link" to="/info/aboutme">
+        <span className="chevron">
+          <i className="fas fa-bolt"></i>
+        </span>
+        About me
+      </Link>
     </nav>
   );
 };
