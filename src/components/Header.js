@@ -4,7 +4,7 @@ import LangToggle from "./header/LangToggle";
 
 const Header = () => {
   return (
-    <header>
+    <header role="banner">
       <img alt="logo" />
       <NavBarHeader />
       <LangToggle />

@@ -12,8 +12,10 @@ class Info extends React.Component {
     super();
     this.state = {
       isModalOpen: false,
+      nav: [["info"]],
     };
     this.onChangeModal = this.onChangeModal.bind(this);
+    this.addToNavBar = this.addToNavBar.bind(this);
   }
 
   onChangeModal() {
@@ -22,28 +24,44 @@ class Info extends React.Component {
     }));
   }
 
+  addToNavBar = (displayName) => {
+    this.setState({ nav: [...this.state.nav, [displayName]] });
+  };
+
   render() {
     const modal = this.state.isModalOpen;
     return (
       <main className="infoContainer">
         <Modal1 modal={modal} onChangeModal={this.onChangeModal} />
-        <BreadCrumbs />
+        <BreadCrumbs
+          nav={this.state.nav}
+          rollBackNavBar={this.rollBackNavBar}
+          addToNavBar={this.addToNavBar}
+        />
         <NavBarSection />
-        <Switch>
-          <Route
-            path="/info/projects"
-            component={() => (
-              <Projects onChangeModal={this.onChangeModal} modal={modal} />
-            )}
-          />
-          <Route
-            path="/info/experience"
-            component={() => (
-              <Experience onChangeModal={this.onChangeModal} modal={modal} />
-            )}
-          />
-          <Route path="/info/aboutme" component={AboutMe} />
-        </Switch>
+
+        <Route
+          path="/info/projects"
+          onClick={() => this.addToNavBar("projects")}
+          component={() => (
+            <Projects onChangeModal={this.onChangeModal} modal={modal} />
+          )}
+        />
+        <Route
+          path="/info/experience"
+          component={() => (
+            <Experience
+              onChangeModal={this.onChangeModal}
+              modal={modal}
+              addToNavBar={this.addToNavBar}
+            />
+          )}
+        />
+        <Route
+          path="/info/aboutme"
+          component={AboutMe}
+          addToNavBar={this.addToNavBar}
+        />
       </main>
     );
   }

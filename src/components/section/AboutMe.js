@@ -4,7 +4,7 @@ import AboutMeTxt from "./AboutMeTxt";
 
 const AboutMe = () => {
   return (
-    <section className="aboutMeContainer" id="aboutme">
+    <section className="aboutMeContainer" id="aboutme" aria-label="about">
       <h1 className="aboutMeTitle">About me</h1>
       <div className="aboutMeBorder">
         <div className="aboutMeImg">
