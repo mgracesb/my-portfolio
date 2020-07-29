@@ -17,7 +17,7 @@ const Modal = (props) => {
               value={props.modal}
               onClick={closeModal}
             >
-              <i class="fas fa-times"></i>
+              <i className="fas fa-times"></i>
             </button>
             <img className="modalImg" alt="description" />
             <div className="modalText">

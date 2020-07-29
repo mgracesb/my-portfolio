@@ -1,7 +1,6 @@
 import React from "react";
 
 const Panels = (props) => {
-  console.log(props);
   const openModal = (e) => {
     e.preventDefault();
     props.onChangeModal(e.currentTarget.value);

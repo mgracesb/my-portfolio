@@ -5,7 +5,7 @@ const Experience = (props) => {
   return (
     <section
       className="experienceContainer"
-      id="experience"
+      id={props.id}
       aria-label="experience"
     >
       <h1 className="experienceTitle">Experience</h1>

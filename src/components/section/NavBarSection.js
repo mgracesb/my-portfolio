@@ -1,29 +1,27 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import SectionInputs from "./SectionInputs";
+import ScrollTo from "react-scroll-into-view";
 
 const NavBarSection = () => {
   return (
     <nav className="navBarSection">
-      <Link className="link" to="/info/projects">
-        <span className="chevron">
-          <i className="fas fa-bolt"></i>
-        </span>
-        Projects
-      </Link>
-
-      <Link className="link" to="/info/experience">
-        <span className="chevron">
-          <i className="fas fa-bolt"></i>
-        </span>
-        Experience
-      </Link>
-
-      <Link className="link" to="/info/aboutme">
-        <span className="chevron">
-          <i className="fas fa-bolt"></i>
-        </span>
-        About me
-      </Link>
+      <ul>
+        <li key="projects">
+          <ScrollTo selector="#projects">
+            <SectionInputs value="projects" />
+          </ScrollTo>
+        </li>
+        <li key="experience">
+          <ScrollTo selector="#experience">
+            <SectionInputs value="experience" />
+          </ScrollTo>
+        </li>
+        <li key="aboutme">
+          <ScrollTo selector="#aboutme">
+            <SectionInputs value="aboutme" />
+          </ScrollTo>
+        </li>
+      </ul>
     </nav>
   );
 };

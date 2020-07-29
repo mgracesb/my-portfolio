@@ -2,9 +2,14 @@ import React from "react";
 import RRSS from "./RRSS";
 import AboutMeTxt from "./AboutMeTxt";
 
-const AboutMe = () => {
+const AboutMe = (props) => {
   return (
-    <section className="aboutMeContainer" id="aboutme" aria-label="about">
+    <section
+      className="aboutMeContainer"
+      id="aboutme"
+      aria-label="about"
+      ref={props.section}
+    >
       <h1 className="aboutMeTitle">About me</h1>
       <div className="aboutMeBorder">
         <div className="aboutMeImg">

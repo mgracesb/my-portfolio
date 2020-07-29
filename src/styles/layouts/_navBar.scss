@@ -3,7 +3,6 @@
   // height: 40%;
   width: 10vw;
   top: 45%;
-  padding: 20px;
   font-family: $fontText;
   position: absolute;
   display: flex;
@@ -14,46 +13,49 @@
   box-shadow: -5px 9px 5px rgba(0, 0, 0, 0.3), -7px 11px 6px rgba(0, 0, 0, 0.3);
   list-style: none;
 
-  a {
-    color: rgb(184, 184, 184);
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: 1px;
-    position: relative;
-    padding: 10%;
-    padding-left: 0;
-    width: 85%;
-    display: flex;
-    justify-content: space-between;
-    transition: ease-in 100ms;
+  ul li {
+    .link {
+      color: rgb(184, 184, 184);
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      // border: 1px;
+      position: relative;
+      padding: 10%;
+      padding-left: 0;
+      width: 85%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: ease-in 100ms;
 
-    &:hover,
-    &:active {
-      background-image: linear-gradient(
-        150deg,
-        $colorHighlight,
-        transparent,
-        $colorDefault
-      );
-      border-top: 1px solid $colorDefault;
-      border-bottom: 1px solid $colorDefault;
-      color: $colorClear;
-      width: 100%;
-      letter-spacing: 3px;
-      @include navGlow;
-    }
-
-    .chevron {
-      display: inline-block;
-      margin-left: 5%;
-      width: 15%;
-      height: 15%;
       &:hover,
       &:active {
-        height: auto;
-        background-size: contain;
-        @include iconGlow;
+        background-image: linear-gradient(
+          150deg,
+          $colorHighlight,
+          transparent,
+          $colorDefault
+        );
+        border-top: 1px solid $colorDefault;
+        border-bottom: 1px solid $colorDefault;
+        color: $colorClear;
+        width: 100%;
+        letter-spacing: 3px;
+        @include navGlow;
+      }
+      .navBarTitle {
+        align-self: center;
+        margin: 0;
+      }
+      .fas.fa-chevron-right.edit {
+        margin-left: 20px;
+        color: aquamarine;
+        justify-self: center;
+        &:hover,
+        &:active {
+          @include iconGlow;
+        }
       }
     }
   }
