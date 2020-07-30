@@ -1,3 +1,33 @@
+@mixin for-tablet-portrait {
+  @media all and (min-width: $tablet-p) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape {
+  @media all and (min-width: $tablet-l) {
+    @content;
+  }
+}
+
+@mixin for-pc-portrait {
+  @media all and (min-width: $pc-p) {
+    @content;
+  }
+}
+
+@mixin for-pc-landscape {
+  @media all and (min-width: $pc-l) {
+    @content;
+  }
+}
+
+@mixin for-pc-large {
+  @media all and (min-width: $pc-xl) {
+    @content;
+  }
+}
+
 @mixin h1 {
   margin: 0;
   align-self: end;
@@ -9,18 +39,37 @@
   text-shadow: -2px -2px 15px $colorHighlight, 2px 2px 15px $colorDefault;
 }
 
-@mixin h3 {
+@mixin h3-xl {
   text-transform: uppercase;
   font-weight: 300;
   font-family: $fontTitle;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: $colorClear;
 }
 
-@mixin h4 {
-  font-weight: bolder;
-  font-size: 1.8rem;
+@mixin h3-nav-bar {
+  font-size: 1rem;
+  font-family: $fontText;
   text-transform: uppercase;
+  color: $colorClear;
+}
+
+@mixin h4-sm {
+  @include for-tablet-portrait {
+    font-size: 1.3rem;
+  }
+}
+
+@mixin h4-ml {
+  @include for-pc-landscape {
+    font-size: 1.5rem;
+  }
+}
+
+@mixin h4-xl {
+  @include for-pc-large() {
+    font-size: 1.7rem;
+  }
 }
 
 @mixin more {

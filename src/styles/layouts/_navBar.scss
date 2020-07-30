@@ -8,54 +8,58 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  -webkit-transform: translatex(-10%) perspective(500) rotateY(20deg);
   transform: translatex(-10%) perspective(500) rotateY(20deg);
+  -webkit-transform: translatex(-10%) perspective(500) rotateY(20deg);
   background-color: #002963a2;
   box-shadow: -5px 9px 5px rgba(0, 0, 0, 0.3), -7px 11px 6px rgba(0, 0, 0, 0.3);
   list-style: none;
 
   ul li {
-    .link {
-      color: rgb(184, 184, 184);
-      font-size: 1.1rem;
-      text-transform: uppercase;
-      text-decoration: none;
-      // border: 1px;
-      position: relative;
-      padding: 10%;
-      padding-left: 0;
-      width: 85%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      transition: ease-in 100ms;
+    list-style: none;
+    .scrollTo {
+      .link {
+        list-style: none;
+        color: rgb(184, 184, 184);
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        position: relative;
+        padding: 10%;
+        padding-left: 0;
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: ease-in 100ms;
 
-      &:hover,
-      &:active {
-        background-image: linear-gradient(
-          150deg,
-          $colorHighlight,
-          transparent,
-          $colorDefault
-        );
-        border-top: 1px solid $colorDefault;
-        border-bottom: 1px solid $colorDefault;
-        color: $colorClear;
-        width: 100%;
-        letter-spacing: 3px;
-        @include navGlow;
-      }
-      .navBarTitle {
-        align-self: center;
-        margin: 0;
-      }
-      .fas.fa-chevron-right.edit {
-        margin-left: 20px;
-        color: aquamarine;
-        justify-self: center;
         &:hover,
         &:active {
-          @include iconGlow;
+          background-image: linear-gradient(
+            150deg,
+            $colorHighlight,
+            transparent,
+            $colorDefault
+          );
+          border-top: 1px solid $colorDefault;
+          border-bottom: 1px solid $colorDefault;
+          color: $colorClear;
+          width: 100%;
+          letter-spacing: 3px;
+          @include navGlow;
+        }
+        .navBarTitle {
+          align-self: center;
+          margin: 0;
+          @include h3-nav-bar;
+        }
+        .fas.fa-chevron-right.edit {
+          margin-left: 20px;
+          color: $colorDefault;
+          justify-self: center;
+          &:hover,
+          &:active {
+            @include iconGlow;
+          }
         }
       }
     }

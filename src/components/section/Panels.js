@@ -9,7 +9,7 @@ const Panels = (props) => {
     <div className="panelContainer">
       <img src="#" alt="" />
       <div className="projectTitle">
-        <h3>Project title</h3>
+        <h3>{props.title}</h3>
         <button type="button" value={props.modal} onClick={openModal}>
           + more
         </button>

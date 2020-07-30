@@ -12,6 +12,7 @@ class Info extends React.Component {
 
     this.state = {
       isModalOpen: false,
+      val: "",
       // nav: [["info"]],
     };
   }

@@ -7,17 +7,17 @@ const NavBarSection = () => {
     <nav className="navBarSection">
       <ul>
         <li key="projects">
-          <ScrollTo selector="#projects">
+          <ScrollTo className="scrollTo" selector="#projects">
             <SectionInputs value="projects" />
           </ScrollTo>
         </li>
         <li key="experience">
-          <ScrollTo selector="#experience">
+          <ScrollTo className="scrollTo" selector="#experience">
             <SectionInputs value="experience" />
           </ScrollTo>
         </li>
         <li key="aboutme">
-          <ScrollTo selector="#aboutme">
+          <ScrollTo className="scrollTo" selector="#aboutme">
             <SectionInputs value="aboutme" />
           </ScrollTo>
         </li>
