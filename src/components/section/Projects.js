@@ -19,16 +19,18 @@ const Projects = (props) => {
         reason=""
         technologies=""
         link=""
+        image="desescalada"
       />
       <Panels
         modal={props.modal}
         onChangeModal={props.onChangeModal}
-        title="Kawai animal"
+        title="your spirit kawai animal"
         slogan=""
         description=""
         reason=""
         technologies=""
         link=""
+        image="kawaii-animal"
       />
       <Panels
         modal={props.modal}
@@ -39,6 +41,7 @@ const Projects = (props) => {
         reason=""
         technologies=""
         link=""
+        image="digital-cards"
       />
     </section>
   );

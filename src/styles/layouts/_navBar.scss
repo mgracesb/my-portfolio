@@ -1,8 +1,8 @@
 .navBarSection {
   // background-image: linear-gradient(transparent, #070b18, transparent);
   // height: 40%;
-  width: 10vw;
-  top: 45%;
+  width: 12vw;
+  top: 50%;
   font-family: $fontText;
   position: absolute;
   display: flex;
@@ -14,11 +14,15 @@
   box-shadow: -5px 9px 5px rgba(0, 0, 0, 0.3), -7px 11px 6px rgba(0, 0, 0, 0.3);
   list-style: none;
 
+  @include for-pc-large {
+    width: 10vw;
+    top: 45%;
+  }
+
   ul li {
     list-style: none;
     .scrollTo {
       .link {
-        list-style: none;
         color: rgb(184, 184, 184);
         font-size: 0.8rem;
         text-transform: uppercase;
@@ -53,9 +57,13 @@
           @include h3-nav-bar;
         }
         .fas.fa-chevron-right.edit {
-          margin-left: 20px;
+          margin-left: 13px;
           color: $colorDefault;
           justify-self: center;
+
+          @include for-pc-large {
+            margin-left: 20px;
+          }
           &:hover,
           &:active {
             @include iconGlow;
