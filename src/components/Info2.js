@@ -5,20 +5,18 @@ import Projects from "./section/Projects";
 import Experience from "./section/Experience";
 import AboutMe from "./section/AboutMe";
 
-class Info extends React.Component {
-  render() {
-    return (
-      <main className="infoContainer">
-        <NavBarSection />
+const Info = () => {
+  return (
+    <main className="infoContainer">
+      <NavBarSection />
 
-        <Projects id="projects" />
+      <Projects id="projects" />
 
-        <Experience id="experience" />
+      <Experience id="experience" />
 
-        <AboutMe id="aboutme" />
-      </main>
-    );
-  }
-}
+      <AboutMe id="aboutme" />
+    </main>
+  );
+};
 
 export default Info;

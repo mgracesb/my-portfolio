@@ -1,7 +1,9 @@
 import React from "react";
+import Desescalada from "../../imgs/Desescalada.png";
+import Kawaii from "../../imgs/Kawaii.png";
+import Digital from "../../imgs/Digital.png";
 
 const Modal = (props) => {
-  console.log(props);
   const closeModal = (e) => {
     props.onChangeModal(e.currentTarget.value);
   };
@@ -19,7 +21,17 @@ const Modal = (props) => {
             >
               <i className="fas fa-times"></i>
             </button>
-            <img className="modalImg" alt="description" />
+            <img
+              className="modalImg"
+              alt="description"
+              src={
+                props.image === "Desescalada"
+                  ? Desescalada
+                  : props.image === "Kawaii"
+                  ? Kawaii
+                  : Digital
+              }
+            />
             <div className="modalContent">
               <h4>{props.title}</h4>
               <div className="modalText">

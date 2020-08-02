@@ -1,12 +1,16 @@
 .panelContainer {
   background-image: linear-gradient(transparent, transparent, $colorDark);
   border: 1px solid $colorDefault;
-  height: 65%;
+  height: 75%;
   width: 85%;
+  display: grid;
+  grid-template-rows: 60% 40%;
 
-  img {
-    height: 300px;
-    width: 300px;
+  .imgContainer {
+    padding: 3%;
+    .panelImg {
+      width: 100%;
+    }
   }
 
   .projectTitle {
@@ -21,12 +25,14 @@
     }
 
     button {
-      margin-top: 5%;
       border: none;
       background: none;
       text-decoration: underline;
       padding: 2%;
       @include more;
     }
+  }
+
+  &:hover {
   }
 }

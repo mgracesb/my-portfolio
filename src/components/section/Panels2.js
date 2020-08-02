@@ -1,8 +1,8 @@
 import React from "react";
 import Modal1 from "./Modal1";
-import Desescalada from "../../imgs/Desescalada.png";
-import Kawaii from "../../imgs/Kawaii.png";
-import Digital from "../../imgs/Digital.png";
+import Desescalada from "../../imgs/desescalada-mu.jpg";
+import Kawaii from "../../imgs/kawaii-mu.jpg";
+import Digital from "../../imgs/digital-mu.jpg";
 
 class Panels extends React.Component {
   constructor(props) {
@@ -10,7 +10,6 @@ class Panels extends React.Component {
     this.state = {
       isModalOpen: false,
     };
-    console.log(props);
   }
 
   onChangeModal = () => {
@@ -31,9 +30,21 @@ class Panels extends React.Component {
 
     return (
       <div className="panelContainer">
-        <img src={image} alt={title} />
+        <div className="imgContainer">
+          <img
+            className="panelImg"
+            src={
+              image === "Desescalada"
+                ? Desescalada
+                : image === "Kawaii"
+                ? Kawaii
+                : Digital
+            }
+            alt={title}
+          />
+        </div>
         <div className="projectTitle">
-          <h3>{this.props.title}</h3>
+          <h3>{title}</h3>
           <button
             type="button"
             value={this.state.isModalOpen}
@@ -51,6 +62,7 @@ class Panels extends React.Component {
           reason={reason}
           technologies={technologies}
           link={link}
+          image={image}
         />
       </div>
     );

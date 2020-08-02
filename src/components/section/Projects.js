@@ -19,7 +19,7 @@ const Projects = (props) => {
         reason=""
         technologies=""
         link=""
-        image="desescalada"
+        image="Desescalada"
       />
       <Panels
         modal={props.modal}
@@ -30,7 +30,7 @@ const Projects = (props) => {
         reason=""
         technologies=""
         link=""
-        image="kawaii-animal"
+        image="Kawaii"
       />
       <Panels
         modal={props.modal}
@@ -41,7 +41,7 @@ const Projects = (props) => {
         reason=""
         technologies=""
         link=""
-        image="digital-cards"
+        image="Digital"
       />
     </section>
   );
