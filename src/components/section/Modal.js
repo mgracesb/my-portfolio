@@ -2,6 +2,7 @@ import React from "react";
 import Desescalada from "../../imgs/Desescalada.png";
 import Kawaii from "../../imgs/Kawaii.png";
 import Digital from "../../imgs/Digital.png";
+import DesescaladaVid from "../../imgs/desescalada-vid.mp4";
 
 const Modal = (props) => {
   const closeModal = (e) => {
@@ -21,7 +22,7 @@ const Modal = (props) => {
             >
               <i className="fas fa-times"></i>
             </button>
-            <img
+            {/* <img
               className="modalImg"
               alt="description"
               src={
@@ -31,7 +32,12 @@ const Modal = (props) => {
                   ? Kawaii
                   : Digital
               }
-            />
+            /> */}
+            <video
+              onMouseOver={(event) => event.target.play()}
+              onMouseOut={(event) => event.target.pause()}
+              src={DesescaladaVid}
+            ></video>
             <div className="modalContent">
               <h4>{props.title}</h4>
               <div className="modalText">

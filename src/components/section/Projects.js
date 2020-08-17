@@ -1,5 +1,5 @@
 import React from "react";
-import Panels from "./Panels2";
+import Panels1 from "./Panels1";
 
 const Projects = (props) => {
   return (
@@ -10,7 +10,7 @@ const Projects = (props) => {
       ref={props.section}
     >
       <h1 className="projectsTitle">Projects</h1>
-      <Panels
+      <Panels1
         modal={props.modal}
         onChangeModal={props.onChangeModal}
         title="COVID-19 Desescalada"
@@ -21,7 +21,7 @@ const Projects = (props) => {
         link=""
         image="Desescalada"
       />
-      <Panels
+      <Panels1
         modal={props.modal}
         onChangeModal={props.onChangeModal}
         title="your spirit kawai animal"
@@ -32,7 +32,7 @@ const Projects = (props) => {
         link=""
         image="Kawaii"
       />
-      <Panels
+      <Panels1
         modal={props.modal}
         onChangeModal={props.onChangeModal}
         title="Digital card generator"

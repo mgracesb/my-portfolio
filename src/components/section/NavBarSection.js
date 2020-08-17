@@ -7,30 +7,47 @@ class NavBarSection extends React.Component {
     super(props);
 
     this.state = {
-      isSelected: false,
+      isSelected: "one",
     };
   }
 
-  selectItem = () => {
-    console.log(this.state.isSelected);
-    this.setState({ isSelected: !this.state.isSelected });
+  selectItem = (e) => {
+    e.preventDefault();
+    const val = e.currentTarget.id;
+    this.setState({ isSelected: val });
   };
+
   render() {
     const selected = this.state.isSelected;
     return (
       <nav className="navBarSection">
         <ul>
-          <li key="projects" onClick={this.selectItem}>
-            <ScrollTo className={"scrollTo"} selector="#projects">
+          <li
+            key="projects"
+            id="one"
+            className={selected === "one" ? "li selected" : "li"}
+            onClick={this.selectItem}
+          >
+            <ScrollTo className="scrollTo" selector="#projects">
               <SectionInputs value="projects" selected={selected} />
             </ScrollTo>
           </li>
-          <li key="experience" onClick={this.selectItem}>
+          <li
+            key="experience"
+            id="two"
+            className={selected === "two" ? "li selected" : "li"}
+            onClick={this.selectItem}
+          >
             <ScrollTo className="scrollTo" selector="#experience">
               <SectionInputs value="experience" selected={selected} />
             </ScrollTo>
           </li>
-          <li key="aboutme" onClick={this.selectItem}>
+          <li
+            key="aboutme"
+            id="three"
+            className={selected === "three" ? "li selected" : "li"}
+            onClick={this.selectItem}
+          >
             <ScrollTo className="scrollTo" selector="#aboutme">
               <SectionInputs value="aboutme" selected={selected} />
             </ScrollTo>

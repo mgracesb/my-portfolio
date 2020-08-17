@@ -50,6 +50,11 @@
           width: 100%;
         }
 
+        video {
+          width: 100%;
+          height: auto;
+        }
+
         .modalContent {
           grid-row: 1/-1;
           grid-column: 2;
