@@ -3,6 +3,8 @@ import Desescalada from "../../imgs/Desescalada.png";
 import Kawaii from "../../imgs/Kawaii.png";
 import Digital from "../../imgs/Digital.png";
 import DesescaladaVid from "../../imgs/desescalada-vid.mp4";
+import KawaiiVid from "../../imgs/kawaii-vid.mp4";
+import DigitalVid from "../../imgs/digital-vid.mp4";
 
 const Modal = (props) => {
   const closeModal = (e) => {
@@ -36,7 +38,13 @@ const Modal = (props) => {
             <video
               onMouseOver={(event) => event.target.play()}
               onMouseOut={(event) => event.target.pause()}
-              src={DesescaladaVid}
+              src={
+                props.image === "Desescalada"
+                  ? DesescaladaVid
+                  : props.image === "Kawaii"
+                  ? KawaiiVid
+                  : DigitalVid
+              }
             ></video>
             <div className="modalContent">
               <h4>{props.title}</h4>
