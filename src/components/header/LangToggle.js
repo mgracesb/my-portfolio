@@ -1,29 +1,47 @@
 import React from "react";
 
-const LangToggle = () => {
-  return (
-    <div className="switchBox">
-      <div className="switch">
-        <input type="checkbox" name="toggle" />
-        <label htmlFor="toggle">
-          <i className="bulb">
-            <span className="bulb-center"></span>
-            <span className="filament-1"></span>
-            <span className="filament-2"></span>
-            <span className="reflections">
-              <span></span>
-            </span>
-            <span className="sparks">
-              <i className="spark1"></i>
-              <i className="spark2"></i>
-              <i className="spark3"></i>
-              <i className="spark4"></i>
-            </span>
-          </i>
-        </label>
+// class LangToggle extends React.Component {
+//   state = { lang: "english" };
+
+//   render() {
+//     return (
+//       <div></div>
+//     );
+//   }
+// }
+
+// export default LangToggle;
+
+class LangToggle extends React.Component {
+  constructor(props) {
+    super(props);
+    this.buttonSize = 150;
+    this.state = {
+      lang: false,
+    };
+  }
+
+  langToggle = () => {
+    this.setState({
+      lang: !this.state.lang,
+    });
+  };
+  render() {
+    const { lang } = this.state;
+
+    return (
+      <div className="widget">
+        <div className="langToggle">
+          <button
+            className={`circle ${lang ? "click" : null}`}
+            onClick={this.langToggle}
+          >
+            <span>{lang ? "ES" : "EN"}</span>
+          </button>
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default LangToggle;

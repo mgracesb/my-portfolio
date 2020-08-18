@@ -17,6 +17,7 @@ class Panels1 extends React.Component {
       isModalOpen: !prevState.isModalOpen,
     }));
   };
+
   render() {
     const {
       title,
@@ -46,11 +47,20 @@ class Panels1 extends React.Component {
         <div className="projectTitle">
           <h3>{title}</h3>
           <button
+            className="english__active"
             type="button"
             value={this.state.isModalOpen}
             onClick={this.onChangeModal}
           >
             + more
+          </button>
+          <button
+            className="spanish"
+            type="button"
+            value={this.state.isModalOpen}
+            onClick={this.onChangeModal}
+          >
+            + más
           </button>
         </div>
         <Modal
