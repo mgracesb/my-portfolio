@@ -28,44 +28,62 @@ header {
       overflow: hidden;
 
       .link {
-        color: rgba(255, 255, 255, 0.9);
+        color: rgba(240, 240, 240, 0.9);
         font-size: 1.5rem;
         font-family: $fontTitle;
         text-transform: uppercase;
         padding: 5% 40%;
         text-decoration: none;
-      }
 
-      &:after,
-      &:active {
-        background: $colorDefault;
-        filter: blur(0.5px);
-      }
-
-      &:hover {
-        &::after {
-          transform: translateX(100%);
-          transition: transform 0.2s ease-in;
+        &:after,
+        &:active {
+          background: $colorDefault;
+          filter: blur(0.5px);
         }
-      }
 
-      &:active {
-        background: none;
-        box-shadow: none;
-        border-top: 1px solid $colorDefault;
-        text-shadow: 1px 1px 10px $colorHighlight,
-          -1px -1px 10px $colorHighlight;
-      }
+        &:hover {
+          font-size: 1.8rem;
+          &::after {
+            transform: translateX(100%);
+            transition: transform 0.2s ease-in;
+          }
+        }
 
-      &:after {
-        content: "";
-        position: absolute;
-        height: 1px;
-        width: 100%;
-        left: -100%;
-        display: block;
-        bottom: 0;
-        transition: all 0.1s ease-in;
+        &:active {
+          background: none;
+          box-shadow: none;
+          border-top: 1px solid $colorDefault;
+          text-shadow: 1px 1px 10px $colorHighlight,
+            -1px -1px 10px $colorHighlight;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          height: 1px;
+          width: 100%;
+          left: -100%;
+          display: block;
+          bottom: 0;
+          transition: all 0.1s ease-in;
+        }
+
+        &__selected {
+          color: rgba(255, 255, 255, 0.9);
+          font-size: 1.8rem;
+          font-family: $fontTitle;
+          text-transform: uppercase;
+          padding: 5% 40%;
+          text-shadow: 1px 1px 10px $colorHighlight,
+            -1px -1px 10px $colorHighlight;
+          background-image: linear-gradient(
+            90deg,
+            transparent,
+            $colorDefault,
+            transparent
+          );
+          border: 1px solid $colorDefault;
+        }
       }
     }
   }

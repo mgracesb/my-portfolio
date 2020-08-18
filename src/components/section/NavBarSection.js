@@ -3,13 +3,7 @@ import SectionInputs from "./SectionInputs";
 import ScrollTo from "react-scroll-into-view";
 
 class NavBarSection extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      isSelected: "one",
-    };
-  }
+  state = { isSelected: "one" };
 
   selectItem = (e) => {
     e.preventDefault();
