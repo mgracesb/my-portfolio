@@ -39,19 +39,38 @@
   text-shadow: -2px -2px 15px $colorHighlight, 2px 2px 15px $colorDefault;
 }
 
-@mixin h3-xl {
+@mixin h3-ml {
   text-transform: uppercase;
   font-weight: 300;
   font-family: $fontTitle;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: $colorClear;
 }
 
+@mixin h3-xl {
+  @include for-pc-large {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: $fontTitle;
+    font-size: 1.6rem;
+    color: $colorClear;
+  }
+}
+
 @mixin h3-nav-bar {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: $fontText;
   text-transform: uppercase;
   color: $colorClear;
+}
+
+@mixin h3-nav-bar-xl {
+  @include for-pc-large {
+    font-size: 1.3rem;
+    font-family: $fontText;
+    text-transform: uppercase;
+    color: $colorClear;
+  }
 }
 
 @mixin h4-sm {
@@ -74,9 +93,10 @@
 
 @mixin more {
   font-family: $fontText;
-  font-weight: 300;
-  font-size: 1rem;
+  font-weight: lighter;
+  font-size: 1.2rem;
   color: $colorClear;
+  font-style: italic;
 }
 
 @mixin titleShadow {

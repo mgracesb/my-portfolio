@@ -20,6 +20,7 @@
 
     h3 {
       text-align: center;
+      @include h3-ml;
       @include h3-xl;
       @include navGlow;
     }
@@ -27,9 +28,15 @@
     button {
       border: none;
       background: none;
-      text-decoration: underline;
       padding: 2%;
       @include more;
+    }
+
+    .active {
+      display: block;
+    }
+    .inactive {
+      display: none;
     }
   }
 }

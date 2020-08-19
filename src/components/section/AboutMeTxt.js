@@ -1,6 +1,7 @@
 import React from "react";
 
-const AboutMeTxt = () => {
+const AboutMeTxt = (props) => {
+  const { lang } = props;
   return (
     <div className="txt">
       <h6>Lorem Ipsum</h6>

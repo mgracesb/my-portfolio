@@ -11,6 +11,11 @@
   grid-gap: 20px;
   overflow: hidden;
 
+  @include for-pc-large {
+    background-size: contain;
+    background-position-x: 35%;
+  }
+
   .homeContent {
     grid-column: 3;
     display: flex;
@@ -20,6 +25,13 @@
     height: 100%;
     transform: translateY(10%) perspective(450) rotateY(-15deg);
     -webkit-transform: translateY(10%) perspective(450) rotateY(-15deg);
+
+    @include for-pc-large {
+      transform: translateY(0%) translateX(-10%) perspective(300)
+        rotateY(-15deg);
+      -webkit-transform: translateY(0%) translateX(-10%) perspective(300)
+        rotateY(-15deg);
+    }
 
     h2 {
       font-size: 6.5rem;
@@ -31,6 +43,10 @@
       color: #eedde0;
       text-transform: uppercase;
       @include titleShadow;
+
+      @include for-pc-large {
+        font-size: 8rem;
+      }
     }
 
     .subtitle {
@@ -42,6 +58,9 @@
       color: #eedde0;
       text-transform: capitalize;
       @include titleShadow;
+      @include for-pc-large {
+        font-size: 5.5rem;
+      }
     }
 
     .moreInfo {

@@ -1,21 +1,18 @@
 .navBarSection {
-  // background-image: linear-gradient(transparent, #070b18, transparent);
-  // height: 40%;
-  width: 12vw;
+  width: 10vw;
   top: 50%;
   font-family: $fontText;
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  transform: translatex(-10%) perspective(500) rotateY(20deg);
-  -webkit-transform: translatex(-10%) perspective(500) rotateY(20deg);
+  transform: translatex(-10%) perspective(300) rotateY(20deg);
+  -webkit-transform: translatex(-10%) perspective(300) rotateY(20deg);
   background-color: #002963a2;
   box-shadow: -5px 9px 5px rgba(0, 0, 0, 0.3), -7px 11px 6px rgba(0, 0, 0, 0.3);
   list-style: none;
 
   @include for-pc-large {
-    width: 10vw;
     top: 45%;
   }
 
@@ -29,32 +26,43 @@
     transition: ease-in 100ms;
 
     .scrollTo {
-      padding: 10% 5%;
+      padding: 10% 1% 10% 5%;
 
+      @include for-pc-large {
+        padding: 10% 5%;
+      }
       .link {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 85%;
+        width: 90%;
+        transform: perspective(300) rotateY(20deg);
+        -webkit-transform: perspective(300) rotateY(20deg);
+
+        @include for-pc-large {
+          justify-content: space-evenly;
+        }
 
         .navBarTitle {
           align-self: center;
           margin: 0;
           @include h3-nav-bar;
+          @include h3-nav-bar-xl;
         }
         .fas.fa-chevron-right.edit {
-          margin-left: 13px;
+          font-size: 5px;
           color: $colorDefault;
           justify-self: center;
 
           @include for-pc-large {
             margin-left: 20px;
+            font-size: 7px;
           }
-          &:hover,
-          &:active {
-            @include iconGlow;
-          }
+        }
+        &:hover,
+        &:active {
+          @include iconGlow;
         }
       }
     }
@@ -70,8 +78,11 @@
       border-bottom: 1px solid $colorDefault;
       color: $colorClear;
       width: 100%;
-      letter-spacing: 3px;
+      letter-spacing: 1px;
       @include navGlow;
+      @include for-pc-large {
+        letter-spacing: 2px;
+      }
     }
   }
 }

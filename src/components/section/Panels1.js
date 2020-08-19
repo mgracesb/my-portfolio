@@ -53,7 +53,7 @@ class Panels1 extends React.Component {
             value={this.state.isModalOpen}
             onClick={this.onChangeModal}
           >
-            + more
+            ++ learn more ++
           </button>
           <button
             className={lang !== false ? "active" : "inactive"}
@@ -61,7 +61,7 @@ class Panels1 extends React.Component {
             value={this.state.isModalOpen}
             onClick={this.onChangeModal}
           >
-            + más
+            ++ saber más ++
           </button>
         </div>
         <Modal

@@ -2,6 +2,7 @@ import React from "react";
 import Panels1 from "./Panels1";
 
 const Projects = (props) => {
+  const { lang } = props;
   return (
     <section
       className="projectsContainer"
@@ -11,6 +12,7 @@ const Projects = (props) => {
     >
       <h1 className="projectsTitle">Projects</h1>
       <Panels1
+        lang={props.lang}
         modal={props.modal}
         onChangeModal={props.onChangeModal}
         title="COVID-19 Desescalada"
@@ -22,6 +24,7 @@ const Projects = (props) => {
         image="Desescalada"
       />
       <Panels1
+        lang={props.lang}
         modal={props.modal}
         onChangeModal={props.onChangeModal}
         title="your spirit kawai animal"
@@ -33,6 +36,7 @@ const Projects = (props) => {
         image="Kawaii"
       />
       <Panels1
+        lang={props.lang}
         modal={props.modal}
         onChangeModal={props.onChangeModal}
         title="Digital card generator"

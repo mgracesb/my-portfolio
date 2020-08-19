@@ -10,11 +10,11 @@ const Info = (props) => {
     <main className="infoContainer">
       <NavBarSection lang={props.lang} />
 
-      <Projects id="projects" />
+      <Projects id="projects" lang={props.lang} />
 
-      <Experience id="experience" />
+      <Experience id="experience" lang={props.lang} />
 
-      <AboutMe id="aboutme" />
+      <AboutMe id="aboutme" lang={props.lang} />
     </main>
   );
 };

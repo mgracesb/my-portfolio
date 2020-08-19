@@ -3,6 +3,7 @@ import RRSS from "./RRSS";
 import AboutMeTxt from "./AboutMeTxt";
 
 const AboutMe = (props) => {
+  const { lang } = props;
   return (
     <section
       className="aboutMeContainer"
@@ -22,10 +23,9 @@ const AboutMe = (props) => {
         </div>
         <div className="aboutMeTextContainer">
           <h5>Mercy Shyu</h5>
-          <AboutMeTxt />
-          <AboutMeTxt />
-          <AboutMeTxt />
-          <AboutMeTxt />
+          <AboutMeTxt lang={lang} />
+          <AboutMeTxt lang={lang} />
+          <AboutMeTxt lang={lang} />
           <RRSS />
         </div>
       </div>
