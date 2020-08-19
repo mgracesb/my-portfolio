@@ -16,18 +16,15 @@ class LangToggle extends React.Component {
   constructor(props) {
     super(props);
     this.buttonSize = 150;
-    this.state = {
-      lang: false,
-    };
   }
 
-  langToggle = () => {
-    this.setState({
-      lang: !this.state.lang,
-    });
+  langToggle = (e) => {
+    e.preventDefault();
+    this.props.langToggle();
   };
+
   render() {
-    const { lang } = this.state;
+    const { lang } = this.props;
 
     return (
       <div className="widget">

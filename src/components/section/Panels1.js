@@ -27,6 +27,7 @@ class Panels1 extends React.Component {
       technologies,
       link,
       image,
+      lang,
     } = this.props;
 
     return (
@@ -47,7 +48,7 @@ class Panels1 extends React.Component {
         <div className="projectTitle">
           <h3>{title}</h3>
           <button
-            className="english__active"
+            className={lang === false ? "active" : "inactive"}
             type="button"
             value={this.state.isModalOpen}
             onClick={this.onChangeModal}
@@ -55,7 +56,7 @@ class Panels1 extends React.Component {
             + more
           </button>
           <button
-            className="spanish"
+            className={lang !== false ? "active" : "inactive"}
             type="button"
             value={this.state.isModalOpen}
             onClick={this.onChangeModal}

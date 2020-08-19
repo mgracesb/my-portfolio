@@ -5,10 +5,10 @@ import Projects from "./section/Projects";
 import Experience from "./section/Experience";
 import AboutMe from "./section/AboutMe";
 
-const Info = () => {
+const Info = (props) => {
   return (
     <main className="infoContainer">
-      <NavBarSection />
+      <NavBarSection lang={props.lang} />
 
       <Projects id="projects" />
 
