@@ -23,6 +23,8 @@ class Panels1 extends React.Component {
       title,
       descriptionEN,
       descriptionES,
+      infoEN,
+      infoES,
       reasonEN,
       reasonES,
       link,
@@ -69,6 +71,7 @@ class Panels1 extends React.Component {
           onChangeModal={this.onChangeModal}
           title={title}
           description={lang === false ? descriptionEN : descriptionES}
+          description2={lang === false ? infoEN : infoES}
           reason={lang === false ? reasonEN : reasonES}
           link={link}
           image={image}

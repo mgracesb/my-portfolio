@@ -4,7 +4,7 @@ import KawaiiVid from "../../imgs/kawaii-vid.mp4";
 import DigitalVid from "../../imgs/digital-vid.mp4";
 
 const Modal = (props) => {
-  const { image, title, description, link, reason, lang } = props;
+  const { image, title, description, description2, link, reason, lang } = props;
   const closeModal = (e) => {
     props.onChangeModal(e.currentTarget.value);
   };
@@ -40,7 +40,14 @@ const Modal = (props) => {
             <div className="modalContent">
               <h4>{title}</h4>
               <div className="modalText">
+                <p className={lang === false ? "q-active" : "inactive"}>
+                  Description
+                </p>
+                <p className={lang !== false ? "q-active" : "inactive"}>
+                  Descripción
+                </p>
                 <p>{description}</p>
+                <p>{description2}</p>
                 <p className={lang === false ? "q-active" : "inactive"}>
                   Why was it created?
                 </p>
@@ -48,6 +55,12 @@ const Modal = (props) => {
                   ¿Por qué se creó?
                 </p>
                 <p>{reason}</p>
+                <p className={lang === false ? "q-active" : "inactive"}>
+                  Technologies
+                </p>
+                <p className={lang !== false ? "q-active" : "inactive"}>
+                  Tecnologías
+                </p>
                 <div className="modalTechs">
                   <i class="fab fa-html5"></i>
                   <i class="fab fa-css3-alt"></i>
@@ -56,8 +69,10 @@ const Modal = (props) => {
                   <i class="fab fa-sass"></i>
                   <i class="fab fa-apple"></i>
                 </div>
-                <div className="modalLink" href={link}>
-                  <span>link</span>
+                <div className="modalLink">
+                  <a href={link} target="_blank" rel="noopener noreferrer">
+                    link
+                  </a>
                 </div>
               </div>
             </div>
