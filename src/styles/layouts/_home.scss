@@ -78,8 +78,7 @@
       font-family: $fontText;
       box-shadow: 0 0 1px $colorHighlight2, 0 0 2px $colorHighlight2,
         25px 9px 15px rgba(0, 0, 0, 0.5);
-
-      transition: all 100ms ease-in-out;
+      transition: all 100ms ease-in;
 
       &:hover,
       &:active {
@@ -88,8 +87,29 @@
         text-shadow: 3px 2px 4px $colorDark;
         box-shadow: 0 0 5px $colorHighlight2, 0 0 20px $colorHighlight2,
           0 0 40px $colorHighlight2, 0 0 180px $colorHighlight2;
-        -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+      }
+
+      .scroll-arrow {
+        animation: arrow-wave 600ms infinite;
+        animation-direction: alternate;
+        @for $i from 1 through 3 {
+          &:nth-child(#{$i}) {
+            animation-delay: 200ms * $i;
+          }
+        }
       }
     }
+  }
+}
+
+@keyframes arrow-wave {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }

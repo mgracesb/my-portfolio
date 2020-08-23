@@ -1,8 +1,8 @@
 import React from "react";
 import Modal from "./Modal";
-import Desescalada from "../../imgs/desescalada-mu.jpg";
-import Kawaii from "../../imgs/kawaii-mu.jpg";
-import Digital from "../../imgs/digital-mu.jpg";
+import Desescalada from "../../imgs/desescalada-mu.png";
+import Kawaii from "../../imgs/kawaii-mu.png";
+import Digital from "../../imgs/digital-mu.png";
 
 class Panels1 extends React.Component {
   constructor(props) {
@@ -21,10 +21,10 @@ class Panels1 extends React.Component {
   render() {
     const {
       title,
-      slogan,
-      description,
-      reason,
-      technologies,
+      descriptionEN,
+      descriptionES,
+      reasonEN,
+      reasonES,
       link,
       image,
       lang,
@@ -68,12 +68,11 @@ class Panels1 extends React.Component {
           isModalOpen={this.state.isModalOpen}
           onChangeModal={this.onChangeModal}
           title={title}
-          slogan={slogan}
-          description={description}
-          reason={reason}
-          technologies={technologies}
+          description={lang === false ? descriptionEN : descriptionES}
+          reason={lang === false ? reasonEN : reasonES}
           link={link}
           image={image}
+          lang={lang}
         />
       </div>
     );

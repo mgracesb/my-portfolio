@@ -1,17 +1,5 @@
 import React from "react";
 
-// class LangToggle extends React.Component {
-//   state = { lang: "english" };
-
-//   render() {
-//     return (
-//       <div></div>
-//     );
-//   }
-// }
-
-// export default LangToggle;
-
 class LangToggle extends React.Component {
   constructor(props) {
     super(props);

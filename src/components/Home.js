@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -6,13 +7,12 @@ const Home = () => {
       <div className="homeContent">
         <h2>mercy shyu</h2>
         <p className="subtitle">Frontend developer</p>
-        <a
-          className="moreInfo"
-          id="moreInfo"
-          href="https://codepen.io/derekmorash/pen/XddZJY"
-        >
-          more about me
-        </a>
+
+        <Link className="moreInfo" to="/info">
+          <i className="fas fa-chevron-right scroll-arrow"></i>
+          <i className="fas fa-chevron-right scroll-arrow"></i>
+          <i className="fas fa-chevron-right scroll-arrow"></i>
+        </Link>
       </div>
     </section>
   );

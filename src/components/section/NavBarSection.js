@@ -13,6 +13,7 @@ class NavBarSection extends React.Component {
 
   render() {
     const selected = this.state.isSelected;
+    const lang = this.props.lang;
     return (
       <nav className="navBarSection">
         <ul>
@@ -23,7 +24,12 @@ class NavBarSection extends React.Component {
             onClick={this.selectItem}
           >
             <ScrollTo className="scrollTo" selector="#projects">
-              <SectionInputs value="projects" selected={selected} />
+              <SectionInputs
+                value="projects"
+                id="proyectos"
+                selected={selected}
+                lang={lang}
+              />
             </ScrollTo>
           </li>
           <li
@@ -33,7 +39,12 @@ class NavBarSection extends React.Component {
             onClick={this.selectItem}
           >
             <ScrollTo className="scrollTo" selector="#experience">
-              <SectionInputs value="experience" selected={selected} />
+              <SectionInputs
+                value="experience"
+                id="experiencia"
+                selected={selected}
+                lang={lang}
+              />
             </ScrollTo>
           </li>
           <li
@@ -43,7 +54,12 @@ class NavBarSection extends React.Component {
             onClick={this.selectItem}
           >
             <ScrollTo className="scrollTo" selector="#aboutme">
-              <SectionInputs value="aboutme" selected={selected} />
+              <SectionInputs
+                value="aboutme"
+                id="sobre mi"
+                selected={selected}
+                lang={lang}
+              />
             </ScrollTo>
           </li>
         </ul>

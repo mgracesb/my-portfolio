@@ -75,13 +75,13 @@
 
 @mixin h4-sm {
   @include for-tablet-portrait {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
 @mixin h4-ml {
   @include for-pc-landscape {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -94,9 +94,15 @@
 @mixin more {
   font-family: $fontText;
   font-weight: lighter;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   color: $colorClear;
   font-style: italic;
+}
+
+@mixin more-xl {
+  @include for-pc-large {
+    font-size: 1.2rem;
+  }
 }
 
 @mixin titleShadow {
@@ -111,4 +117,8 @@
 
 @mixin iconGlow {
   text-shadow: -1px -1px 6px $colorClear;
+}
+
+@mixin buttonGlow {
+  text-shadow: 1px 1px 5px $colorDefault;
 }
