@@ -31,11 +31,11 @@ const Projects = (props) => {
         onChangeModal={props.onChangeModal}
         title="Your spirit kawai animal 🐼"
         descriptionEN="Choose a kawaii animal and accessorise with cute and fun items."
-        descriptionES="Elige tu animal kawaii y añade divertidos y accesorios "
+        descriptionES="Elige tu animal kawaii y añade divertidos y accesorios."
         infoEN="- Responsive and mobile first design."
         infoES="- Diseño responsive y mobile first."
         reasonEN="[Beautiful things makes us happy - kurzgesagt] "
-        reasonES="Las cosas bonitas nos hacen felices "
+        reasonES="Las cosas bonitas nos hacen felices."
         link="https://mgracesb.github.io/your-spirit-kawaii-animal/"
         image="Kawaii"
       />
@@ -44,12 +44,12 @@ const Projects = (props) => {
         modal={modal}
         onChangeModal={props.onChangeModal}
         title="Digital card generator 📇"
-        descriptionEN=""
-        descriptionES=""
+        descriptionEN="Create your personalized digital card with your picture and links to your social media. Our online card maker is easy to use, and once you're done, the card can be downloaded or directly shared through your Twitter account!"
+        descriptionES="Crea tu tarjeta digital y personalízala con tus datos, imagen y links a tus redes sociales. Nuestra aplicación es fácil de usar y, una vez terminada, podrás descargar tu tarjeta o compartirla a través de Twitter."
         infoEN="- Responsive and mobile first design."
         infoES="- Diseño responsive y mobile first."
-        reasonEN=""
-        reasonES=""
+        reasonEN="It allows you to keep your social profile in one place."
+        reasonES="Este generador de tarjetas digitales te permite recoger tu perfil social en una sola tarjeta."
         link="https://beta.adalab.es/project-promo-i-module-3-team-2-afternoon/#/"
         image="Digital"
       />

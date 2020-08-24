@@ -2,7 +2,7 @@ import React from "react";
 import Panels2 from "./Panels2";
 
 const Experience = (props) => {
-  const { lang, modal } = props;
+  const { lang } = props;
   return (
     <section
       className="experienceContainer"
@@ -12,10 +12,7 @@ const Experience = (props) => {
       <h1 className="experienceTitle">Experience</h1>
       <Panels2
         lang={lang}
-        modal={modal}
-        onChangeModal={props.onChangeModal}
-        title="COVID-19 Desescalada"
-        slogan=""
+        title="Secretary & Office manager"
         description=""
         reason=""
         technologies=""
@@ -24,10 +21,7 @@ const Experience = (props) => {
       />
       <Panels2
         lang={lang}
-        modal={modal}
-        onChangeModal={props.onChangeModal}
-        title="COVID-19 Desescalada"
-        slogan=""
+        title="Community Manager at Start-up"
         description=""
         reason=""
         technologies=""
@@ -36,10 +30,16 @@ const Experience = (props) => {
       />
       <Panels2
         lang={lang}
-        modal={modal}
-        onChangeModal={props.onChangeModal}
-        title="COVID-19 Desescalada"
-        slogan=""
+        title="Purchase department & Marketing"
+        description=""
+        reason=""
+        technologies=""
+        link=""
+        image="Desescalada"
+      />
+      <Panels2
+        lang={lang}
+        title="Restaurant Manager & Co-owner"
         description=""
         reason=""
         technologies=""
