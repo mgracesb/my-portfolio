@@ -27,7 +27,11 @@ const Panels2 = (props) => {
             descripción
           </p>
           <p className={lang === false ? "active" : "inactive"}>{line1EN}</p>
-          <p className={lang !== false ? "t-active" : "inactive"}>{line1ES}</p>
+          <p className={lang !== false ? "active" : "inactive"}>{line1ES}</p>
+          <p className={lang === false ? "active" : "inactive"}>{line2EN}</p>
+          <p className={lang !== false ? "active" : "inactive"}>{line2ES}</p>
+          <p className={lang === false ? "active" : "inactive"}>{line3EN}</p>
+          <p className={lang !== false ? "active" : "inactive"}>{line3ES}</p>
         </div>
       </div>
     </div>

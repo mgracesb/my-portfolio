@@ -1,15 +1,23 @@
 .panels2Container {
   background-image: linear-gradient(transparent, transparent, $colorDark);
-  // border: 1px solid $colorDefault;
   border: 1px solid $colorDefault;
-  height: 70%;
+  height: 80%;
   width: 80%;
   display: flex;
   flex-direction: column;
+  place-content: center;
   transition: 200ms ease-out;
 
+  @include for-pc-large {
+    width: 70%;
+  }
+
   .panels2Content {
-    padding: 4%;
+    padding: 0% 4%;
+
+    @include for-pc-large {
+      padding: 0% 5%;
+    }
 
     h3 {
       text-align: center;
