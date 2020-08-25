@@ -23,9 +23,15 @@ const AboutMe = (props) => {
         </div>
         <div className="aboutMeTextContainer">
           <h5>Mercy Shyu</h5>
-          <AboutMeTxt lang={lang} />
-          <AboutMeTxt lang={lang} />
-          <AboutMeTxt lang={lang} />
+          <AboutMeTxt
+            lang={lang}
+            line1EN="Hi there! My name is Mercy and I'm a Spanish Frontend Web Developer based in Madrid."
+            line2EN="I love building I enjoy doing my best and producing quality work by finding the right solution for each problem."
+            line3EN="I usually spend my days coding and learning new things. When I am not coding, you can find me"
+            line1ES=""
+            line2ES=""
+            line3ES=""
+          />
           <RRSS />
         </div>
       </div>

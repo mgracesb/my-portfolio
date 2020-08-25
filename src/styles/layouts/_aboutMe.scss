@@ -119,6 +119,14 @@
 
         p {
           font-family: $fontText;
+
+          &.active {
+            display: block;
+          }
+
+          &.inactive {
+            display: none;
+          }
         }
       }
     }
