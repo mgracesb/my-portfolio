@@ -5,6 +5,17 @@
   width: 85%;
   display: grid;
   grid-template-rows: 60% 40%;
+  transition: all 0ms ease-in;
+
+  &:hover {
+    background-image: linear-gradient(
+      150deg,
+      $colorHighlight,
+      $colorDark,
+      $colorDefault 95%
+    );
+    border: 1px solid transparent;
+  }
 
   .imgContainer {
     grid-row: 1;
@@ -13,6 +24,7 @@
       background-color: transparent;
       width: 100%;
       height: auto;
+      -webkit-filter: drop-shadow(-5px 5px 8px rgba(0, 0, 0, 0.5));
     }
   }
   .projectTitle {

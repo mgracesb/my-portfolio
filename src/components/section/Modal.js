@@ -62,12 +62,12 @@ const Modal = (props) => {
                   Tecnologías
                 </p>
                 <div className="modalTechs">
-                  <i class="fab fa-html5"></i>
-                  <i class="fab fa-css3-alt"></i>
-                  <i class="fab fa-js-square"></i>
-                  <i class="fab fa-react"></i>
-                  <i class="fab fa-sass"></i>
-                  <i class="fab fa-apple"></i>
+                  <i className="fab fa-html5"></i>
+                  <i className="fab fa-css3-alt"></i>
+                  <i className="fab fa-js-square"></i>
+                  <i className="fab fa-react"></i>
+                  <i className="fab fa-sass"></i>
+                  <i className="fab fa-apple"></i>
                 </div>
                 <div className="modalLink">
                   <a href={link} target="_blank" rel="noopener noreferrer">

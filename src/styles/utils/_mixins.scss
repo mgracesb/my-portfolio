@@ -36,7 +36,9 @@
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   color: $colorClear;
-  text-shadow: -2px -2px 15px $colorHighlight, 2px 2px 15px $colorDefault;
+  text-shadow: -2px -2px 15px $colorHighlight, 2px 2px 15px $colorDefault,
+    -1px -1px 6px $colorHighlight, 1px 1px 6px $colorDefault,
+    1px -1px 1px $colorBg, -1px 1px 1px $colorBg;
 }
 
 @mixin h3-ml {

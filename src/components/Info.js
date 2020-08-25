@@ -6,15 +6,16 @@ import Experience from "./section/Experience";
 import AboutMe from "./section/AboutMe";
 
 const Info = (props) => {
+  const { lang } = props;
   return (
     <main className="infoContainer">
-      <NavBarSection lang={props.lang} />
+      <NavBarSection lang={lang} />
 
-      <Projects id="projects" lang={props.lang} />
+      <Projects id="projects" lang={lang} />
 
-      <Experience id="experience" lang={props.lang} />
+      <Experience id="experience" lang={lang} />
 
-      <AboutMe id="aboutme" lang={props.lang} />
+      <AboutMe id="aboutme" lang={lang} />
     </main>
   );
 };

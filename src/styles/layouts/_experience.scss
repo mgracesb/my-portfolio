@@ -4,8 +4,8 @@
   padding: 2%;
   padding-left: 10%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 10% 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 10% repeat(2, 1fr);
   place-items: center;
 
   .experienceTitle {

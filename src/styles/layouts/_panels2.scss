@@ -1,0 +1,85 @@
+.panels2Container {
+  background-image: linear-gradient(transparent, transparent, $colorDark);
+  // border: 1px solid $colorDefault;
+  border: 1px solid $colorDefault;
+  height: 70%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  transition: 200ms ease-out;
+
+  .panels2Content {
+    padding: 4%;
+
+    h3 {
+      text-align: center;
+      margin-bottom: 5%;
+      @include h3-ml;
+      @include h3-xl;
+      @include navGlow;
+      margin: 1%;
+    }
+    p {
+      font-size: 0.8rem;
+      color: $colorText;
+      @include for-pc-large {
+        font-size: 1.1rem;
+      }
+      &.company {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        font-style: italic;
+        text-shadow: -1px 1px 7px $colorHighlight, -2px 2px 1px black;
+
+        @include for-pc-large {
+          font-size: 0.9rem;
+        }
+      }
+
+      &.active {
+        display: block;
+      }
+
+      &.t-active {
+        width: 100%;
+        background-image: linear-gradient(
+          90deg,
+          transparent,
+          $colorDefault 70%,
+          transparent
+        );
+        border-bottom: 1px solid rgba(255, 255, 255, 0.274);
+        letter-spacing: 2px;
+        font-style: italic;
+        color: $colorClear;
+      }
+      &.inactive {
+        display: none;
+      }
+    }
+
+    .panels2Txt {
+      padding: 2%;
+    }
+  }
+
+  &:hover {
+    -moz-transform: perspective(600px) rotateY(-10deg) skew(-2deg, -2deg);
+    -webkit-transform: perspective(600px) rotateY(-10deg) skew(-2deg, -2deg);
+    -o-transform: perspective(600px) rotateY(-10deg) skew(-2deg, -2deg);
+    -ms-transform: perspective(600px) rotateY(-10deg) skew(-2deg, -2deg);
+    transform: perspective(600px) rotateY(-10deg) skew(-2deg, -1deg);
+    border-right: 1px solid;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+      -15deg,
+      $colorClear 7%,
+      $colorDefault 80%,
+      transparent
+    );
+    box-shadow: 2px 1px 2px $colorDefault, 5px 5px 10px black;
+  }
+}
