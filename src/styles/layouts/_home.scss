@@ -1,5 +1,6 @@
 .homeContainer {
-  background: url(../../imgs/photo.png) no-repeat;
+  // background: url(../../imgs/photo.png) no-repeat;
+  // background: url(../../imgs/home-vid.mp4) no-repeat;
   background-size: cover;
   background-position-y: 35%;
   height: 95vh;
@@ -14,6 +15,18 @@
   @include for-pc-large {
     background-size: contain;
     background-position-x: 35%;
+  }
+
+  video {
+    // width: 102vw;
+    // height: auto;
+    // position: absolute;
+    // left: -2%;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    width: 100vw;
+    height: auto;
   }
 
   .homeContent {
