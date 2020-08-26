@@ -26,11 +26,11 @@ const AboutMe = (props) => {
           <AboutMeTxt
             lang={lang}
             line1EN="Hi there! My name is Mercy and I'm a Spanish Frontend Web Developer based in Madrid."
-            line2EN="I love building I enjoy doing my best and producing quality work by finding the right solution for each problem."
-            line3EN="I usually spend my days coding and learning new things. When I am not coding, you can find me"
-            line1ES=""
-            line2ES=""
-            line3ES=""
+            line2EN="I enjoy doing my best and producing quality work by finding the right solution for each problem. I love how by typing lines of code I can bring creativity and building processes together."
+            line3EN="When I am not coding, you can find me in my sneakers burning calories, making a DIY project I found on Youtube or just chilling by the pool."
+            line1ES="¡Hola! soy Mercy, Frontend Web Developer viviendo Madrid."
+            line2ES="Disfruto elaborando trabajo de calidad y me vuelco en lo que hago. Me encanta cómo, al escribir líneas de código, puedo unir la creatividad y los procesos de construcción."
+            line3ES="Cuando no estoy programando, puedes encontrarme haciendo deporte, manualidades que encontré en Youtube o simplemente relajándome en la piscina."
           />
           <RRSS />
         </div>

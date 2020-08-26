@@ -3,7 +3,7 @@
   // background: url(../../imgs/home-vid.mp4) no-repeat;
   background-size: cover;
   background-position-y: 35%;
-  height: 95vh;
+  height: 100%;
   width: 100%;
   padding: 0 2vw;
   display: grid;
@@ -18,15 +18,16 @@
   }
 
   video {
-    // width: 102vw;
-    // height: auto;
-    // position: absolute;
-    // left: -2%;
     top: 0%;
     left: 0%;
     position: absolute;
-    width: 100vw;
+    left: -10%;
+    width: 111vw;
     height: auto;
+
+    @include for-pc-large {
+      width: 100vw;
+    }
   }
 
   .homeContent {

@@ -111,14 +111,9 @@
       }
 
       .txt {
-        h6 {
-          text-transform: uppercase;
-          letter-spacing: 5px;
-          font-family: $fontText;
-        }
-
         p {
           font-family: $fontText;
+          font-size: 0.8rem;
 
           &.active {
             display: block;
