@@ -18,16 +18,12 @@
   }
 
   video {
-    top: 0%;
+    top: -5%;
     left: 0%;
     position: absolute;
-    left: -10%;
-    width: 111vw;
+    left: -5%;
+    width: 110vw;
     height: auto;
-
-    @include for-pc-large {
-      width: 100vw;
-    }
   }
 
   .homeContent {
