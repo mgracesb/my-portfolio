@@ -17,6 +17,7 @@
 @import "./components/rrss.scss";
 
 .wrapper {
+  background-color: $colorBg;
   display: grid;
   grid-template-rows: 7vh 93vh;
 }

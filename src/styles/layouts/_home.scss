@@ -1,40 +1,42 @@
 .homeContainer {
-  // background: url(../../imgs/photo.png) no-repeat;
-  // background: url(../../imgs/home-vid.mp4) no-repeat;
-  background-size: cover;
-  background-position-y: 35%;
   height: 100%;
   width: 100%;
   padding: 0 2vw;
   display: grid;
-  grid-template-columns: 5vw 30vw 60vw 5vw;
+  grid-template-columns: 10vw 25vw 60vw 5vw;
   grid-template-rows: 1fr;
-  grid-gap: 20px;
   overflow: hidden;
 
-  @include for-pc-large {
-    background-size: contain;
-    background-position-x: 35%;
+  img {
+    grid-column: 1/3;
+    height: 100%;
+    @include for-pc-landscape {
+      display: none;
+    }
   }
 
   video {
-    top: -5%;
-    left: 0%;
-    position: absolute;
-    left: -5%;
-    width: 110vw;
-    height: auto;
+    display: none;
+
+    @include for-pc-landscape {
+      display: block;
+      grid-column: 1/3;
+      height: 100%;
+    }
+    @include for-pc-large {
+      grid-column: 2/3;
+    }
   }
 
   .homeContent {
-    grid-column: 3;
+    grid-column: 3/4;
     display: flex;
     flex-direction: column;
     place-content: center;
     width: 100%;
     height: 100%;
-    transform: translateY(10%) perspective(450) rotateY(-15deg);
-    -webkit-transform: translateY(10%) perspective(450) rotateY(-15deg);
+    transform: perspective(450) rotateY(-15deg);
+    -webkit-transform: perspective(450) rotateY(-15deg);
 
     @include for-pc-large {
       transform: translateY(0%) translateX(-10%) perspective(300)
@@ -44,7 +46,7 @@
     }
 
     h2 {
-      font-size: 6.5rem;
+      font-size: 3rem;
       font-family: $fontTitle;
       text-align: center;
       letter-spacing: 8px;
@@ -53,7 +55,12 @@
       color: #eedde0;
       text-transform: uppercase;
       @include titleShadow;
-
+      @include for-tablet-portrait {
+        font-size: 5rem;
+      }
+      @include for-pc-landscape {
+        font-size: 6rem;
+      }
       @include for-pc-large {
         font-size: 8rem;
       }
@@ -61,13 +68,19 @@
 
     .subtitle {
       margin: 5% 0;
-      font-size: 5rem;
+      font-size: 2rem;
       font-weight: 400;
       font-family: $fontText;
       text-align: center;
       color: #eedde0;
       text-transform: capitalize;
       @include titleShadow;
+      @include for-tablet-portrait {
+        font-size: 3.5rem;
+      }
+      @include for-pc-landscape {
+        font-size: 5rem;
+      }
       @include for-pc-large {
         font-size: 5.5rem;
       }
@@ -88,7 +101,7 @@
       font-family: $fontText;
       box-shadow: 0 0 1px $colorHighlight2, 0 0 2px $colorHighlight2,
         25px 9px 15px rgba(0, 0, 0, 0.5);
-      transition: all 100ms ease-in;
+      transition: 100ms linear;
 
       &:hover,
       &:active {

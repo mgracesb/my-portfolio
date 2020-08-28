@@ -45,7 +45,7 @@ header {
           text-shadow: 1px 1px 10px $colorDefault;
           &::after {
             transform: translateX(100%);
-            transition: transform 0.2s ease-in;
+            transition: transform 200ms ease-in;
           }
         }
 
@@ -64,7 +64,7 @@ header {
           left: -100%;
           display: block;
           bottom: 0;
-          transition: all 0.1s ease-in;
+          transition: all 100ms ease-in;
         }
 
         @include for-pc-large {

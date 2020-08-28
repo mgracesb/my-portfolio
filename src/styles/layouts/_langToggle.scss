@@ -1,8 +1,15 @@
 .widget {
-  position: relative;
-  top: 30%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  grid-column: 3;
+
+  @include for-pc-landscape {
+  }
+
+  @include for-pc-large {
+  }
+  // position: relative;
+  // top: 30%;
+  // -webkit-transform: translate(-50%, -50%);
+  // transform: translate(-50%, -50%);
 
   .langToggle {
     position: relative;
@@ -23,10 +30,9 @@
       border-radius: 50%;
       box-shadow: 0px 3px 8px #222, inset 0px 2px 3px #2e4c6b;
       color: #a7a7a7;
-      font-size: 2rem;
       font-family: $fontText;
-      width: 40px;
-      height: 40px;
+      width: 25px;
+      height: 25px;
       outline: none;
       text-align: center;
       -webkit-transition: box-shadow 500ms ease-in-out;
@@ -72,7 +78,12 @@
 
     .circle span {
       color: rgba(248, 248, 248, 0.8);
+      font-size: 0.6rem;
       text-shadow: 0px 3px 4px $colorBg, inset 0px 2px 3px $colorDefault;
+
+      @include for-pc-large {
+        font-size: 1.2rem;
+      }
     }
 
     .button {
@@ -92,7 +103,7 @@
       line-height: 50px;
       text-align: center;
       text-decoration: none;
-      width: 50px;
+      width: 20px;
       height: 50px;
       position: absolute;
       top: 50%;
