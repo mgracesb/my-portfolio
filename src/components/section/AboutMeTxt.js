@@ -6,12 +6,12 @@ const AboutMeTxt = (props) => {
     <div className="txt">
       <p className={lang === false ? "active" : "inactive"}>More about me:</p>
       <p className={lang !== false ? "active" : "inactive"}>Más sobre mí:</p>
-      <p>{line1EN}</p>
-      <p>{line2EN}</p>
-      <p>{line3EN}</p>
-      <p>{line1ES}</p>
-      <p>{line2ES}</p>
-      <p>{line3ES}</p>
+      <p className={lang === false ? "active" : "inactive"}>{line1EN}</p>
+      <p className={lang === false ? "active" : "inactive"}>{line2EN}</p>
+      <p className={lang === false ? "active" : "inactive"}>{line3EN}</p>
+      <p className={lang !== false ? "active" : "inactive"}>{line1ES}</p>
+      <p className={lang !== false ? "active" : "inactive"}>{line2ES}</p>
+      <p className={lang !== false ? "active" : "inactive"}>{line3ES}</p>
     </div>
   );
 };

@@ -1,40 +1,76 @@
 .rrssContainer {
   display: flex;
   width: 100%;
-  height: 70%;
+  height: 50%;
   display: flex;
   justify-content: space-evenly;
 
   .rrssBox {
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-    background-color: rgba(128, 128, 128, 0.5);
-    align-items: center;
+    padding: 3%;
+    min-width: 60px;
+    border: 2px solid transparent;
     display: flex;
-    height: 100%;
-    width: 20%;
+    flex-direction: column;
     justify-content: center;
-    padding: 20px;
-    transform: skewX(20deg);
-    margin: 2% 0;
-    transition: all 200ms ease-in;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    box-shadow: inset 0px -1px 5px rgba(255, 255, 255, 0.2);
+    transition: 150ms ease-in;
+
+    &:hover {
+      border-bottom: 2px solid $colorDefault;
+      box-shadow: inset 0px -1px 5px $colorDefault;
+      // transform: translateY(-7px) scale(1.15);
+      i {
+        // filter: drop-shadow(1px 2px 3px $colorBg);
+        // -webkit-filter: drop-shadow(1px 2px 3px $colorBg);
+        text-shadow: 0px 2px 2px $colorBg, 0px -2px 5px $colorHighlight,
+          0px 1px 10px $colorHighlight, 0px 2px 4px $colorDefault,
+          0px 1px 5px $colorDefault;
+      }
+    }
 
     i {
-      font-size: 1.5rem;
-      padding: 3%;
-      transform: skewX(-20deg);
       color: $colorClear;
-    }
-    &:hover,
-    &:active {
-      background-image: linear-gradient(
-        150deg,
-        $colorHighlight,
-        transparent,
-        $colorDefault
-      );
-      border-top: 1px solid $colorDefault;
-      border-bottom: 1px solid $colorDefault;
+      text-shadow: 0px 2px 2px $colorBg, 0px -2px 2px $colorBg,
+        0px 1px 5px $colorHighlight, 0px -1px 5px $colorHighlight;
+      font-size: 1.8rem;
     }
   }
+
+  // .rrssBox {
+  //   border-top: 1px solid gray;
+  //   border-bottom: 1px solid gray;
+  //   background-color: rgba(128, 128, 128, 0.5);
+  //   align-items: center;
+  //   display: flex;
+  //   height: 100%;
+  //   width: 20%;
+  //   justify-content: center;
+  //   padding: 20px;
+  //   transform: skewX(20deg);
+  //   margin: 2% 0;
+  //   transition: all 200ms ease-in;
+
+  //   i {
+  //     font-size: 1.5rem;
+  //     padding: 3%;
+  //     transform: skewX(-20deg);
+  //     color: $colorClear;
+  //   }
+  //   &:hover,
+  //   &:active {
+  //     background-image: linear-gradient(
+  //       150deg,
+  //       $colorHighlight,
+  //       transparent,
+  //       $colorDefault
+  //     );
+  //     border-top: 1px solid $colorDefault;
+  //     border-bottom: 1px solid $colorDefault;
+  //     box-shadow: 1px 1px 10px $colorHighlight, 2px 2px 3px $colorClear,
+  //       1px 1px 3px $colorClear;
+  //   }
+  // }
 }

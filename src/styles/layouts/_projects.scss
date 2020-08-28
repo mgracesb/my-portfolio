@@ -5,8 +5,12 @@
   padding-left: 10%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 10% 1fr;
+  grid-template-rows: 15% 1fr;
   place-items: center;
+
+  @include for-pc-large {
+    grid-template-rows: 10% 1fr;
+  }
 
   .projectsTitle {
     grid-row: 1;

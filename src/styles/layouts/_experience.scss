@@ -5,7 +5,7 @@
   padding-left: 10%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 12% repeat(2, 1fr);
+  grid-template-rows: 15% repeat(2, 1fr);
   place-items: center;
 
   @include for-pc-large {
