@@ -21,7 +21,7 @@ const Projects = (props) => {
         infoEN="- Responsive and mobile first design."
         infoES="- Diseño responsive y mobile first."
         reasonEN="Since the State of Emergency was declared in March 2020 to stop spread of coronavirus COVID-19, the Spanish government created a de-escalation plan divided in 4 phases."
-        reasonES=""
+        reasonES="En Marzo de 2020, se declaró el Estado de Alarma para contener y detener el contagio del coronavirus COVID-19."
         link="https://desescalada.mgrace.es/"
         image="Desescalada"
       />

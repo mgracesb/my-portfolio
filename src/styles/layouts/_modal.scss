@@ -114,7 +114,7 @@
             flex-direction: column;
 
             p {
-              font-size: 0.8rem;
+              font-size: 0.9rem;
               color: $colorText;
               letter-spacing: 1px;
               @include for-pc-large {
@@ -127,7 +127,11 @@
               display: block;
               text-transform: uppercase;
               color: $colorDefault;
-              text-shadow: 2px 2px 1px $colorDark, 3px 3px 1px $colorHighlight;
+              text-shadow: 1px 1px 1px $colorDark, 2px 2px 1px $colorHighlight;
+
+              @include for-pc-large {
+                text-shadow: 1px 1px 1px $colorDark, 2px 2px 2px $colorHighlight;
+              }
             }
             .inactive {
               display: none;

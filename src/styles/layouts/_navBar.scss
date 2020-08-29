@@ -2,6 +2,7 @@
   width: 10vw;
   top: 50%;
   font-family: $fontText;
+  letter-spacing: 1px;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -78,7 +79,7 @@
       border-bottom: 1px solid $colorDefault;
       color: $colorClear;
       width: 100%;
-      letter-spacing: 1px;
+      letter-spacing: 3px;
       @include navGlow;
       @include for-pc-large {
         letter-spacing: 2px;

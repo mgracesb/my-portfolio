@@ -1,6 +1,7 @@
 import React from "react";
 import RRSS from "./RRSS";
 import AboutMeTxt from "./AboutMeTxt";
+import Form from "./Form";
 
 const AboutMe = (props) => {
   const { lang } = props;
@@ -20,15 +21,10 @@ const AboutMe = (props) => {
             <div className="crystal_03"></div>
           </div>
           <div className="contactForm">
-            <form>
-              <input />
-              <input />
-              <input />
-            </form>
+            <Form lang={props.lang} />
           </div>
         </div>
         <div className="aboutMeTextContainer">
-          <h5>Mercy Shyu</h5>
           <AboutMeTxt
             lang={lang}
             line1EN="👋🏻 Hi there! My name is Mercy and I'm a Spanish Frontend Web Developer based in Madrid."

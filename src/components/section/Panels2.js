@@ -12,7 +12,6 @@ const Panels2 = (props) => {
     line2ES,
     line3ES,
   } = props;
-  console.log(props);
   return (
     <div className="panels2Container">
       {/* <img src="#" alt="" /> */}
