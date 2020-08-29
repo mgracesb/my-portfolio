@@ -120,6 +120,7 @@
         letter-spacing: 5px;
         align-self: end;
         padding-bottom: 4%;
+        text-shadow: 2px 2px 1px $colorDark, 3px 3px 2px $colorHighlight2;
 
         @include for-pc-large {
           font-size: 2rem;
@@ -127,10 +128,13 @@
       }
 
       .txt {
+        padding: 5%;
         p {
           font-family: $fontText;
           font-size: 0.8rem;
           color: rgba(255, 255, 255, 0.8);
+          text-shadow: 2px 2px 2px $colorBg, 1px 1px 2px $colorHighlight,
+            1px 2px 5px $colorDefault;
 
           @include for-pc-landscape {
             font-size: 0.8rem;

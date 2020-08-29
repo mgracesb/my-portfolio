@@ -20,12 +20,7 @@ const Panels2 = (props) => {
         <h3>{title}</h3>
         <p className="company">{company}</p>
         <div className="panels2Txt">
-          <p className={lang === false ? "t-active" : "inactive"}>
-            description
-          </p>
-          <p className={lang !== false ? "t-active" : "inactive"}>
-            descripción
-          </p>
+          <p className="t-active"></p>
           <p className={lang === false ? "active" : "inactive"}>{line1EN}</p>
           <p className={lang !== false ? "active" : "inactive"}>{line1ES}</p>
           <p className={lang === false ? "active" : "inactive"}>{line2EN}</p>

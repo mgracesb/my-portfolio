@@ -112,11 +112,11 @@
             grid-row: 2;
             display: flex;
             flex-direction: column;
-            // justify-content: space-evenly;
 
             p {
               font-size: 0.8rem;
               color: $colorText;
+              letter-spacing: 1px;
               @include for-pc-large {
                 font-size: 1.2rem;
               }

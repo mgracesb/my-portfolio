@@ -59,15 +59,17 @@
         border: 1px solid $colorDefault;
         transform: translate(3%, -3%);
         box-shadow: -4px 4px 5px $colorBg, -5px 5px 4px $colorDefault,
-          inset -1px 1px 3px rgba(106, 203, 236, 0.7),
-          inset 1px -1px 3px rgba(106, 203, 236, 0.7);
+          inset -1px 1px 3px rgba(106, 203, 236, 0.5),
+          inset 1px -1px 3px rgba(106, 203, 236, 0.5);
         @include buttonGlow;
+        text-shadow: 2px 2px 2px $colorBg;
       }
 
       &:active {
         box-shadow: 5px 5px 5px $colorHighlight2, -5px -5px 5px $colorHighlight2,
           inset -5px 5px 7px $colorHighlight, inset 5px -5px 7px $colorHighlight;
         @include iconGlow;
+        text-shadow: 2px 2px 2px $colorBg;
       }
     }
 
