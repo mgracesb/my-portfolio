@@ -2,9 +2,13 @@
   grid-row: 2;
   height: 90vh;
   width: 100%;
-  padding: 1vh 0 0 5vw;
+  padding: none;
   scroll-snap-type: y proximity;
   overflow-y: scroll;
+
+  @include for-tablet-landscape {
+    padding: 1vh 0 0 5vw;
+  }
 
   section {
     scroll-snap-align: start;

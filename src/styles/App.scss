@@ -19,7 +19,11 @@
 .wrapper {
   background-color: $colorBg;
   display: grid;
-  grid-template-rows: 10vh 90vh;
+  grid-template-rows: 10vh 1fr;
+
+  @include for-tablet-landscape {
+    grid-template-rows: 10vh 90vh;
+  }
 
   @include for-pc-landscape {
     grid-template-rows: 7vh 93vh;

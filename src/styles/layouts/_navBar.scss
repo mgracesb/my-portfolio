@@ -1,18 +1,22 @@
 .navBarSection {
-  width: 10vw;
-  top: 50%;
-  font-family: $fontText;
-  letter-spacing: 1px;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  transform: translatex(-10%) perspective(300) rotateY(20deg);
-  -webkit-transform: translatex(-10%) perspective(300) rotateY(20deg);
-  background-color: #002963a2;
-  box-shadow: -5px 9px 5px rgba(0, 0, 0, 0.3), -7px 11px 6px rgba(0, 0, 0, 0.3);
-  list-style: none;
+  display: none;
 
+  @include for-tablet-landscape {
+    width: 10vw;
+    top: 50%;
+    font-family: $fontText;
+    letter-spacing: 1px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transform: translatex(-10%) perspective(300) rotateY(20deg);
+    -webkit-transform: translatex(-10%) perspective(300) rotateY(20deg);
+    background-color: #002963a2;
+    box-shadow: -5px 9px 5px rgba(0, 0, 0, 0.3),
+      -7px 11px 6px rgba(0, 0, 0, 0.3);
+    list-style: none;
+  }
   @include for-pc-large {
     top: 45%;
   }

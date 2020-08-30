@@ -1,19 +1,28 @@
 .panels2Container {
   background-image: linear-gradient(transparent, transparent, $colorDark);
   border: 1px solid $colorDefault;
-  height: 80%;
-  width: 80%;
+  height: 95%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   place-content: center;
   transition: 200ms ease-out;
+
+  @include for-tablet-landscape {
+    height: 80%;
+    width: 80%;
+  }
 
   @include for-pc-large {
     width: 70%;
   }
 
   .panels2Content {
-    padding: 0% 4%;
+    padding: 2% 4%;
+
+    @include for-tablet-landscape {
+      padding: 0% 4%;
+    }
 
     @include for-pc-large {
       padding: 0% 5%;
@@ -22,27 +31,39 @@
     h3 {
       text-align: center;
       margin-bottom: 5%;
+      @include h3-sm;
       @include h3-ml;
       @include h3-xl;
       @include navGlow;
       margin: 1%;
     }
     p {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       font-family: $fontText;
       color: $colorText;
       letter-spacing: 1px;
+      margin: 0;
+
+      @include for-tablet-landscape {
+        margin: 2%;
+        font-size: 0.9rem;
+      }
       @include for-pc-large {
+        margin: 4%;
         font-size: 1.3rem;
       }
 
       &.company {
         text-align: center;
         text-transform: uppercase;
-        font-size: 0.7rem;
+        font-size: 0.5rem;
         font-style: italic;
+        margin: 0;
         text-shadow: -1px 1px 7px $colorHighlight, -2px 2px 1px black;
-
+        @include for-tablet-landscape {
+          font-size: 0.7rem;
+          margin-bottom: 3%;
+        }
         @include for-pc-large {
           font-size: 1rem;
         }
@@ -54,7 +75,7 @@
 
       &.t-active {
         width: 100%;
-        height: 5px;
+        height: 2px;
         background-image: linear-gradient(
           90deg,
           transparent,
@@ -62,6 +83,11 @@
           transparent
         );
         border-bottom: 1px solid rgba(255, 255, 255, 0.274);
+        margin: 0;
+
+        @include for-tablet-landscape {
+          height: 5px;
+        }
       }
       &.inactive {
         display: none;

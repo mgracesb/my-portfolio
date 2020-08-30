@@ -4,17 +4,35 @@
   padding: 2%;
   padding-left: 10%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 15% repeat(2, 1fr);
-  place-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 13% repeat(3, 1fr);
+  grid-gap: 1%;
+
+  @include for-tablet-landscape {
+    grid-template-rows: 15% repeat(3, 1fr);
+    grid-gap: 5%;
+  }
+
+  @include for-tablet-landscape {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 15% repeat(2, 1fr);
+    place-items: center;
+    grid-gap: 0%;
+  }
 
   @include for-pc-large {
     grid-template-rows: 10% repeat(2, 1fr);
   }
 
   .experienceTitle {
-    grid-row: 1;
-    grid-column: 1/-1;
-    @include h1;
+    text-align: center;
+    padding-bottom: 5%;
+    @include h1-sm;
+    @include h1-ml;
+    @include for-tablet-landscape {
+      padding-bottom: 0;
+      grid-row: 1;
+      grid-column: 1/-1;
+    }
   }
 }

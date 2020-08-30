@@ -10,7 +10,7 @@ header {
   z-index: 2;
 
   @include for-pc-landscape {
-    grid-template-columns: 5% 88% 7%;
+    grid-template-columns: 6% 87% 7%;
     grid-template-rows: 1fr;
   }
 
@@ -25,7 +25,7 @@ header {
     @include for-pc-landscape {
       place-self: none;
       justify-self: center;
-      height: 85%;
+      height: 100%;
     }
   }
 
