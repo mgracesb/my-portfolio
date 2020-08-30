@@ -31,7 +31,6 @@ class NavBarHeader extends React.Component {
               Info
             </Link>
           </li>
-          <span className="menu-highlight"></span>
         </ul>
       </nav>
     );

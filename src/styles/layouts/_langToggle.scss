@@ -1,15 +1,10 @@
 .widget {
   grid-column: 3;
+  place-self: center;
 
   @include for-pc-landscape {
+    place-self: none;
   }
-
-  @include for-pc-large {
-  }
-  // position: relative;
-  // top: 30%;
-  // -webkit-transform: translate(-50%, -50%);
-  // transform: translate(-50%, -50%);
 
   .langToggle {
     position: relative;
@@ -31,14 +26,19 @@
       box-shadow: 0px 3px 8px #222, inset 0px 2px 3px #2e4c6b;
       color: #a7a7a7;
       font-family: $fontText;
-      width: 25px;
-      height: 25px;
+      width: 35px;
+      height: 35px;
       outline: none;
       text-align: center;
       -webkit-transition: box-shadow 500ms ease-in-out;
       transition: box-shadow 500ms ease-in-out;
       -webkit-animation: pulsate 3s infinite ease-in-out;
       animation: pulsate 3s infinite ease-in-out;
+
+      @include for-pc-landscape {
+        width: 25px;
+        height: 25px;
+      }
 
       @include for-pc-large {
         width: 50px;
@@ -78,8 +78,12 @@
 
     .circle span {
       color: rgba(248, 248, 248, 0.8);
-      font-size: 0.6rem;
+      font-size: 1rem;
       text-shadow: 0px 3px 4px $colorBg, inset 0px 2px 3px $colorDefault;
+
+      @include for-pc-landscape {
+        font-size: 0.6rem;
+      }
 
       @include for-pc-large {
         font-size: 1.2rem;
