@@ -32,7 +32,7 @@
   margin: 0;
   align-self: end;
   font-family: $fontTitle;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   color: $colorClear;
@@ -60,7 +60,7 @@
   text-transform: uppercase;
   font-weight: 300;
   font-family: $fontTitle;
-  font-size: 1rem;
+  font-size: 0.9rem;
   letter-spacing: 1px;
   color: $colorClear;
 }
@@ -102,9 +102,7 @@
 }
 
 @mixin h4-sm {
-  @include for-tablet-portrait {
-    font-size: 1.2rem;
-  }
+  font-size: 1rem;
 }
 
 @mixin h4-ml {

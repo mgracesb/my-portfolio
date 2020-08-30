@@ -3,7 +3,7 @@
   height: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 13% repeat(3, 1fr);
+  grid-template-rows: 12% repeat(3, 1fr);
   place-items: center;
 
   @include for-tablet-landscape {
@@ -19,7 +19,7 @@
 
   .projectsTitle {
     text-align: center;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
     @include h1-sm;
     @include h1-ml;
     @include for-tablet-landscape {
