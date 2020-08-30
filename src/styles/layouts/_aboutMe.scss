@@ -186,6 +186,8 @@
           }
 
           .submit {
+            cursor: url(http://ani.cursors-4u.net/cursors/cur-13/cur1162.png),
+              progress;
             padding: 3%;
             font-size: 0.8rem;
             color: $colorClear;
@@ -234,10 +236,26 @@
       grid-column: 2;
       color: $colorClear;
       display: grid;
-      grid-template-rows: 80% 20%;
+      grid-template-rows: 13% 74% 18%;
       line-height: 1.4;
       letter-spacing: 1px;
       padding: 5%;
+
+      @include for-pc-large {
+        grid-template-rows: 20% 65% 15%;
+      }
+
+      .logo {
+        grid-row: 1;
+        height: 15%;
+        justify-self: center;
+        -webkit-filter: drop-shadow(-1px -1px 2px $colorHighlight2);
+        filter: drop-shadow(-1px -1px 2px $colorHighlight2);
+
+        @include for-pc-large {
+          height: 20%;
+        }
+      }
 
       .txt {
         padding: 5%;

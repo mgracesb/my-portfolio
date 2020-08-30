@@ -2,6 +2,7 @@ import React from "react";
 import RRSS from "./RRSS";
 import AboutMeTxt from "./AboutMeTxt";
 import Form from "./Form";
+import Logo from "../../imgs/logo.png";
 
 const AboutMe = (props) => {
   const { lang } = props;
@@ -25,6 +26,7 @@ const AboutMe = (props) => {
           </div>
         </div>
         <div className="aboutMeTextContainer">
+          <img src={Logo} className="logo" alt="logo" />
           <AboutMeTxt
             lang={lang}
             line1EN="👋🏻 Hi there! My name is Mercy and I'm a Spanish Frontend Web Developer based in Madrid."

@@ -51,7 +51,7 @@
       padding: 2% 5%;
       border-radius: 5px;
       transition: 200ms ease-in-out;
-      cursor: pointer;
+      // cursor: pointer;
       @include more;
       @include more-xl;
 
@@ -63,6 +63,8 @@
           inset 1px -1px 3px rgba(106, 203, 236, 0.5);
         @include buttonGlow;
         text-shadow: 2px 2px 2px $colorBg;
+        cursor: url(http://ani.cursors-4u.net/cursors/cur-13/cur1162.png),
+          progress;
       }
 
       &:active {
