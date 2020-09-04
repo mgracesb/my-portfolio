@@ -95,7 +95,8 @@
         video {
           display: none;
 
-          @include for-pc-large {
+          @include for-pc-landscape {
+            display: block;
             grid-row: 1/-1;
             grid-column: 1;
             width: 100%;
@@ -113,6 +114,10 @@
           @include for-tablet-landscape {
             grid-row: 1/-1;
             grid-column: 2;
+            padding: 7%;
+          }
+
+          @include for-pc-large {
             padding: 10% 15%;
           }
 
@@ -150,6 +155,9 @@
               color: $colorDefault;
               text-shadow: 1px 1px 1px $colorDark, 2px 2px 1px $colorHighlight;
 
+              @include for-pc-landscape {
+                margin-top: 2%;
+              }
               @include for-pc-large {
                 text-shadow: 1px 1px 1px $colorDark, 2px 2px 2px $colorHighlight;
               }
@@ -187,10 +195,12 @@
               place-content: center;
               transition: all 200ms ease-in;
               letter-spacing: 2px;
+              @include for-pc-landscape {
+                width: 50%;
+              }
 
               @include for-pc-large {
                 height: 7%;
-                width: 50%;
               }
 
               &:hover {
@@ -215,8 +225,13 @@
                   progress;
                 // cursor: pointer;
 
+                @include for-pc-landscape {
+                  padding: 2%;
+                }
+
                 @include for-pc-large {
                   font-size: 1rem;
+                  padding: 5%;
                 }
               }
             }

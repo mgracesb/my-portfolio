@@ -28,6 +28,7 @@ const Modal = (props) => {
             <video
               onMouseOver={(event) => event.target.play()}
               onMouseOut={(event) => event.target.pause()}
+              type="video/mp4"
               src={
                 image === "Desescalada"
                   ? DesescaladaVid
