@@ -59,7 +59,7 @@
           position: absolute;
           width: 100%;
           height: 100%;
-          background: url(http://img.finalfantasyxiv.com/lds/promo/pc/global/images/world/what/crystal_01.png)
+          background: url(https://img.finalfantasyxiv.com/lds/promo/pc/global/images/world/what/crystal_01.png)
             repeat-y;
           -webkit-animation: bg-crystal001 30s infinite;
           -moz-animation: bg-crystal001 30s infinite;
@@ -79,7 +79,7 @@
           position: absolute;
           width: 100%;
           height: 100%;
-          background: url(http://img.finalfantasyxiv.com/lds/promo/pc/global/images/world/what/crystal_02.png)
+          background: url(https://img.finalfantasyxiv.com/lds/promo/pc/global/images/world/what/crystal_02.png)
             repeat-y;
           -webkit-animation: bg-crystal002 60s infinite;
           -moz-animation: bg-crystal002 60s infinite;
@@ -100,7 +100,7 @@
           width: 100%;
           height: 100%;
           left: 5%;
-          background: url(http://img.finalfantasyxiv.com/lds/promo/pc/global/images/world/what/crystal_03.png)
+          background: url(https://img.finalfantasyxiv.com/lds/promo/pc/global/images/world/what/crystal_03.png)
             repeat-y;
           -webkit-animation: bg-crystal003 90s infinite;
           -moz-animation: bg-crystal003 90s infinite;
@@ -202,8 +202,7 @@
           }
 
           .submit {
-            cursor: url(http://ani.cursors-4u.net/cursors/cur-13/cur1162.png),
-              progress;
+            cursor: pointer;
             padding: 3%;
             font-size: 0.8rem;
             color: $colorClear;
