@@ -95,8 +95,7 @@ header {
             $colorDefault,
             transparent
           );
-          cursor: url(http://ani.cursors-4u.net/cursors/cur-13/cur1162.png),
-            progress;
+          cursor: pointer;
 
           @include for-pc-landscape {
             padding: 1% 38%;

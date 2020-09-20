@@ -21,9 +21,9 @@ class App extends React.Component {
       <div className="wrapper">
         <Header lang={lang} langToggle={this.langToggle} />
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/my-portfolio" component={Home} />
           <Route
-            path="/info"
+            path="/my-portfolio/info"
             render={(props) => <Info {...props} lang={lang} />}
           />
         </Switch>
