@@ -18,7 +18,7 @@ const Home = () => {
         <h2>mercy shyu</h2>
         <p className="subtitle">Frontend developer</p>
 
-        <Link className="moreInfo" to="/info">
+        <Link className="moreInfo" to="/my-portfolio/info">
           <i className="fas fa-chevron-right scroll-arrow"></i>
           <i className="fas fa-chevron-right scroll-arrow"></i>
           <i className="fas fa-chevron-right scroll-arrow"></i>
