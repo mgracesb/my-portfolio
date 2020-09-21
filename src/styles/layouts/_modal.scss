@@ -43,6 +43,13 @@
         -webkit-animation-name: showcase;
       }
 
+      @include for-pc-large-long {
+        width: 70%;
+        height: 63%;
+        animation-name: showcase2;
+        -webkit-animation-name: showcase2;
+      }
+
       .modalBox {
         overflow: scroll;
         width: 100%;
@@ -61,6 +68,10 @@
           overflow: hidden;
           grid-template-columns: 60% 40%;
           grid-template-rows: 10% 1fr;
+        }
+
+        @include for-pc-large-long {
+          grid-template-rows: 8% 1fr;
         }
 
         .hoverAlert {
@@ -121,6 +132,10 @@
             padding: 10% 15%;
           }
 
+          @include for-pc-large-long {
+            padding: 6% 8%;
+          }
+
           h4 {
             font-weight: bolder;
             font-size: 0.9rem;
@@ -145,6 +160,10 @@
               letter-spacing: 1px;
               @include for-pc-large {
                 font-size: 1.2rem;
+              }
+
+              @include for-pc-large-long {
+                font-size: 1.1rem;
               }
             }
 
@@ -267,6 +286,41 @@
   }
 }
 
+@-webkit-keyframes showcase {
+  0% {
+    width: 1%;
+    height: 0%;
+    overflow: hidden;
+  }
+  50% {
+    width: 57%;
+    height: 0.5%;
+    overflow: hidden;
+  }
+  100% {
+    width: 57%;
+    height: 55%;
+    overflow: auto;
+  }
+}
+@keyframes showcase {
+  0% {
+    width: 1%;
+    height: 0%;
+    overflow: hidden;
+  }
+  50% {
+    width: 57%;
+    height: 0.5%;
+    overflow: hidden;
+  }
+  100% {
+    width: 57%;
+    height: 55%;
+    overflow: auto;
+  }
+}
+
 @-webkit-keyframes showcase1 {
   0% {
     width: 1%;
@@ -302,37 +356,37 @@
   }
 }
 
-@-webkit-keyframes showcase {
+@-webkit-keyframes showcase2 {
   0% {
     width: 1%;
     height: 0%;
     overflow: hidden;
   }
   50% {
-    width: 57%;
+    width: 70%;
     height: 0.5%;
     overflow: hidden;
   }
   100% {
-    width: 57%;
-    height: 55%;
+    width: 70%;
+    height: 63%;
     overflow: auto;
   }
 }
-@keyframes showcase {
+@keyframes showcase2 {
   0% {
     width: 1%;
     height: 0%;
     overflow: hidden;
   }
   50% {
-    width: 57%;
+    width: 70%;
     height: 0.5%;
     overflow: hidden;
   }
   100% {
-    width: 57%;
-    height: 55%;
+    width: 70%;
+    height: 63%;
     overflow: auto;
   }
 }

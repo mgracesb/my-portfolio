@@ -46,6 +46,11 @@
         height: 50px;
       }
 
+      @include for-pc-large-long {
+        width: 35px;
+        height: 35px;
+      }
+
       .click {
         background-image: -webkit-gradient(
           linear,

@@ -44,7 +44,7 @@ header {
     }
 
     li {
-      // cursor: pointer;
+      cursor: pointer;
       height: 100%;
       text-align: center;
       align-self: center;
@@ -104,6 +104,10 @@ header {
           @include for-pc-large {
             font-size: 1.6rem;
             padding: 5% 38%;
+          }
+
+          @include for-pc-large-long {
+            padding: 2% 38%;
           }
         }
       }

@@ -44,6 +44,11 @@
       height: 65%;
     }
 
+    @include for-pc-large-long {
+      width: 60%;
+      height: 75%;
+    }
+
     .aboutMeImg {
       display: none;
 
@@ -266,12 +271,21 @@
         padding: 5% 6%;
       }
 
+      @include for-pc-large-long {
+        grid-template-rows: 10% 75% 15%;
+        padding: 3% 5%;
+      }
+
       .logo {
         grid-row: 1;
         height: 15%;
         justify-self: center;
         -webkit-filter: drop-shadow(-1px -1px 2px $colorHighlight2);
         filter: drop-shadow(-1px -1px 2px $colorHighlight2);
+
+        @include for-pc-large-long {
+          height: 10%;
+        }
       }
 
       .txt {
@@ -291,6 +305,7 @@
           @include for-pc-landscape {
             font-size: 1rem;
           }
+
           @include for-pc-large {
             font-size: 1.4rem;
             letter-spacing: 1px;

@@ -28,6 +28,12 @@
   }
 }
 
+@mixin for-pc-large-long {
+  @media all and (min-width: $pc-xl) and (max-height: 900px) {
+    @content;
+  }
+}
+
 @mixin h1-sm {
   margin: 0;
   align-self: end;

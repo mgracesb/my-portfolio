@@ -64,6 +64,12 @@
         rotateY(-15deg);
     }
 
+    @include for-pc-large-long {
+      transform: translateY(3%) translateX(-3%) perspective(300) rotateY(-15deg);
+      -webkit-transform: translateY(3%) translateX(-3%) perspective(300)
+        rotateY(-15deg);
+    }
+
     h2 {
       margin: 0;
       font-size: 3rem;
@@ -73,16 +79,23 @@
       color: #eedde0;
       text-transform: uppercase;
       @include titleShadow;
+
       @include for-tablet-landscape {
         font-size: 5rem;
         margin: initial;
         letter-spacing: 8px;
       }
+
       @include for-pc-landscape {
         font-size: 6rem;
       }
+
       @include for-pc-large {
         font-size: 8rem;
+      }
+
+      @include for-pc-large-long {
+        font-size: 7rem;
       }
     }
 
@@ -95,15 +108,22 @@
       color: #eedde0;
       text-transform: capitalize;
       @include titleShadow;
+
       @include for-tablet-landscape {
         font-size: 3.5rem;
         margin: 5% 0;
       }
+
       @include for-pc-landscape {
         font-size: 5rem;
       }
+
       @include for-pc-large {
         font-size: 5.5rem;
+      }
+
+      @include for-pc-large-long {
+        font-size: 5rem;
       }
     }
 

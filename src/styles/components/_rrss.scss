@@ -5,10 +5,14 @@
   display: flex;
   justify-content: space-evenly;
 
+  @include for-pc-large-long {
+    align-self: center;
+  }
+
   .rrssBox {
     padding: 3%;
-    min-width: 50px;
-    min-height: 40px;
+    width: 50px;
+    height: 40px;
     border: 2px solid transparent;
     display: flex;
     flex-direction: column;
@@ -20,8 +24,13 @@
     transition: 150ms ease-in;
 
     @include for-pc-large {
-      min-width: 60px;
-      min-height: 50px;
+      width: 60px;
+      height: 50px;
+    }
+
+    @include for-pc-large-long {
+      width: 50px;
+      height: 40px;
     }
 
     &:hover {
@@ -43,6 +52,10 @@
 
       @include for-pc-large {
         font-size: 1.8rem;
+      }
+
+      @include for-pc-large-long {
+        font-size: 1.4rem;
       }
     }
   }

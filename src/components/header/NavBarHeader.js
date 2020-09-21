@@ -18,7 +18,7 @@ class NavBarHeader extends React.Component {
           <li id="homeButton" onClick={this.selected}>
             <Link
               className={id === "homeButton" ? "link__selected" : "link"}
-              to="/my-portfolio"
+              to="/my-portfolio/"
             >
               Home
             </Link>
