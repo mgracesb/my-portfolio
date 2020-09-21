@@ -1,4 +1,4 @@
-![programming kitty](https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif)
-## 🚦🚧 under construction 🚧🚦
+## Here's a little sneak peak 🖥 💻 📱 !
+![desktop mockup](https://i.postimg.cc/j5G6VHRP/mockup.jpg)
 
-### Please bear 🐻 with me, content will be loaded anytime soon ⏱.
+### Visit to see more!!
