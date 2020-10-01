@@ -55,7 +55,7 @@ class NavBarSection extends React.Component {
           >
             <ScrollTo className="scrollTo" selector="#aboutme">
               <SectionInputs
-                value="aboutme"
+                value="about me"
                 id="sobre mi"
                 selected={selected}
                 lang={lang}

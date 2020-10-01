@@ -22,6 +22,12 @@
   }
 }
 
+@mixin for-pc-landscape-long {
+  @media all and (min-width: $pc-l) and (max-height: 650px) {
+    @content;
+  }
+}
+
 @mixin for-pc-large {
   @media all and (min-width: $pc-xl) {
     @content;

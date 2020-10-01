@@ -57,6 +57,14 @@ header {
         padding-top: 5%;
       }
 
+      @include for-pc-landscape-long {
+        padding-top: 4%;
+      }
+
+      @include for-pc-large {
+        padding-top: 5%;
+      }
+
       .link {
         color: rgba(240, 240, 240, 0.9);
         font-size: 1.2rem;
@@ -99,6 +107,10 @@ header {
 
           @include for-pc-landscape {
             padding: 1% 38%;
+          }
+
+          @include for-pc-landscape-long {
+            padding: 0% 38%;
           }
 
           @include for-pc-large {

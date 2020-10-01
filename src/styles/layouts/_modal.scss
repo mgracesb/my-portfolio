@@ -128,8 +128,13 @@
             padding: 7%;
           }
 
+          @include for-pc-landscape {
+            overflow: scroll;
+          }
+
           @include for-pc-large {
             padding: 10% 15%;
+            overflow: hidden;
           }
 
           @include for-pc-large-long {
@@ -214,6 +219,7 @@
               place-content: center;
               transition: all 200ms ease-in;
               letter-spacing: 2px;
+
               @include for-pc-landscape {
                 width: 50%;
               }

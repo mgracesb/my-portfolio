@@ -48,6 +48,17 @@
         margin: 2%;
         font-size: 0.9rem;
       }
+
+      @include for-pc-landscape {
+        margin: 2%;
+        font-size: 0.9rem;
+      }
+
+      @include for-pc-landscape-long {
+        margin: 1%;
+        font-size: 0.8rem;
+      }
+
       @include for-pc-large {
         margin: 4%;
         font-size: 1.3rem;
