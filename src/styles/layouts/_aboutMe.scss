@@ -291,6 +291,10 @@
       .txt {
         padding: 5%;
 
+        @include for-pc-landscape {
+          overflow-y: scroll;
+        }
+
         @include for-pc-large {
           padding: 5% 0%;
         }
