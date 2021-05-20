@@ -15,17 +15,25 @@ class NavBarHeader extends React.Component {
     return (
       <nav>
         <ul className="navBarHeader">
-          <li id="homeButton" onClick={this.selected}>
+          <li
+            id="homeButton"
+            className={id === "homeButton" ? "item__selected" : ""}
+            onClick={this.selected}
+          >
             <Link
-              className={id === "homeButton" ? "link__selected" : "link"}
+              className="link"
               to="/"
             >
               Home
             </Link>
           </li>
-          <li id="infoButton" onClick={this.selected}>
+          <li
+            id="infoButton" 
+            className={id === "infoButton" ? "item__selected" : ""}
+            onClick={this.selected}
+          >
             <Link
-              className={id === "infoButton" ? "link__selected" : "link"}
+              className="link"
               to="/info"
             >
               Info

@@ -52,7 +52,7 @@
     .aboutMeImg {
       display: none;
 
-      @include for-pc-landscape {
+      @include for-tablet-landscape {
         display: block;
         grid-column: 1;
         position: relative;
@@ -276,16 +276,12 @@
         padding: 3% 5%;
       }
 
-      .logo {
+      .aboutme__logo {
         grid-row: 1;
-        height: 15%;
+        height: 5rem;
         justify-self: center;
         -webkit-filter: drop-shadow(-1px -1px 2px $colorHighlight2);
         filter: drop-shadow(-1px -1px 2px $colorHighlight2);
-
-        @include for-pc-large-long {
-          height: 10%;
-        }
       }
 
       .txt {
@@ -301,17 +297,13 @@
 
         p {
           font-family: $fontText;
-          font-size: 0.8rem;
+          font-size: 1rem;
           color: rgba(255, 255, 255, 0.9);
           text-shadow: 2px 2px 2px $colorBg, 1px 1px 2px $colorHighlight,
             1px 2px 5px $colorDefault;
 
           @include for-pc-landscape {
-            font-size: 1rem;
-          }
-
-          @include for-pc-landscape-long {
-            font-size: 0.9rem;
+            font-size: 1.1rem;
           }
 
           @include for-pc-large {
